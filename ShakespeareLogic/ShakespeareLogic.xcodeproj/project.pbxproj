@@ -1,0 +1,498 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6C645D461B4465CE00ED4746 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6C645D451B4465CE00ED4746 /* main.cpp */; };
+		6C645D561B446A5200ED4746 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C645D551B446A5200ED4746 /* main.swift */; };
+		6C645D641B446E6A00ED4746 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C645D631B446E6A00ED4746 /* main.swift */; };
+		6C645D681B446E7300ED4746 /* 99GreenBottles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C645D5B1B446E4800ED4746 /* 99GreenBottles.swift */; };
+		6C645D701B446F3800ED4746 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6C645D6F1B446F3800ED4746 /* main.cpp */; };
+		6C645D761B446F5800ED4746 /* 99GreenBottles.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6C645D741B446F5800ED4746 /* 99GreenBottles.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6C645D401B4465CE00ED4746 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		6C645D511B446A5200ED4746 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		6C645D5F1B446E6A00ED4746 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		6C645D6B1B446F3800ED4746 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6C645D421B4465CE00ED4746 /* ShakespeareLogic */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ShakespeareLogic; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C645D451B4465CE00ED4746 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		6C645D4C1B4465E500ED4746 /* ShakespeareLogic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShakespeareLogic.cpp; sourceTree = "<group>"; };
+		6C645D4D1B4465E500ED4746 /* ShakespeareLogic.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ShakespeareLogic.hpp; sourceTree = "<group>"; };
+		6C645D531B446A5200ED4746 /* SwiftShakespeareLogic */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftShakespeareLogic; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C645D551B446A5200ED4746 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		6C645D5B1B446E4800ED4746 /* 99GreenBottles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = 99GreenBottles.swift; path = ../SwiftShakespeareLogic/99GreenBottles.swift; sourceTree = "<group>"; };
+		6C645D611B446E6A00ED4746 /* 99GreenBottles */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 99GreenBottles; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C645D631B446E6A00ED4746 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		6C645D6D1B446F3800ED4746 /* 99GreenBottlesCPP */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 99GreenBottlesCPP; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C645D6F1B446F3800ED4746 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		6C645D741B446F5800ED4746 /* 99GreenBottles.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 99GreenBottles.cpp; sourceTree = "<group>"; };
+		6C645D751B446F5800ED4746 /* 99GreenBottles.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = 99GreenBottles.hpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6C645D3F1B4465CE00ED4746 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C645D501B446A5200ED4746 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C645D5E1B446E6A00ED4746 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C645D6A1B446F3800ED4746 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6C645D391B4465CE00ED4746 = {
+			isa = PBXGroup;
+			children = (
+				6C645D441B4465CE00ED4746 /* ShakespeareLogic */,
+				6C645D541B446A5200ED4746 /* SwiftShakespeareLogic */,
+				6C645D621B446E6A00ED4746 /* 99GreenBottles */,
+				6C645D6E1B446F3800ED4746 /* 99GreenBottlesCPP */,
+				6C645D431B4465CE00ED4746 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6C645D431B4465CE00ED4746 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6C645D421B4465CE00ED4746 /* ShakespeareLogic */,
+				6C645D531B446A5200ED4746 /* SwiftShakespeareLogic */,
+				6C645D611B446E6A00ED4746 /* 99GreenBottles */,
+				6C645D6D1B446F3800ED4746 /* 99GreenBottlesCPP */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6C645D441B4465CE00ED4746 /* ShakespeareLogic */ = {
+			isa = PBXGroup;
+			children = (
+				6C645D451B4465CE00ED4746 /* main.cpp */,
+				6C645D4C1B4465E500ED4746 /* ShakespeareLogic.cpp */,
+				6C645D4D1B4465E500ED4746 /* ShakespeareLogic.hpp */,
+			);
+			path = ShakespeareLogic;
+			sourceTree = "<group>";
+		};
+		6C645D541B446A5200ED4746 /* SwiftShakespeareLogic */ = {
+			isa = PBXGroup;
+			children = (
+				6C645D551B446A5200ED4746 /* main.swift */,
+			);
+			path = SwiftShakespeareLogic;
+			sourceTree = "<group>";
+		};
+		6C645D621B446E6A00ED4746 /* 99GreenBottles */ = {
+			isa = PBXGroup;
+			children = (
+				6C645D5B1B446E4800ED4746 /* 99GreenBottles.swift */,
+				6C645D631B446E6A00ED4746 /* main.swift */,
+			);
+			path = 99GreenBottles;
+			sourceTree = "<group>";
+		};
+		6C645D6E1B446F3800ED4746 /* 99GreenBottlesCPP */ = {
+			isa = PBXGroup;
+			children = (
+				6C645D6F1B446F3800ED4746 /* main.cpp */,
+				6C645D741B446F5800ED4746 /* 99GreenBottles.cpp */,
+				6C645D751B446F5800ED4746 /* 99GreenBottles.hpp */,
+			);
+			path = 99GreenBottlesCPP;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6C645D411B4465CE00ED4746 /* ShakespeareLogic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C645D491B4465CE00ED4746 /* Build configuration list for PBXNativeTarget "ShakespeareLogic" */;
+			buildPhases = (
+				6C645D3E1B4465CE00ED4746 /* Sources */,
+				6C645D3F1B4465CE00ED4746 /* Frameworks */,
+				6C645D401B4465CE00ED4746 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShakespeareLogic;
+			productName = ShakespeareLogic;
+			productReference = 6C645D421B4465CE00ED4746 /* ShakespeareLogic */;
+			productType = "com.apple.product-type.tool";
+		};
+		6C645D521B446A5200ED4746 /* SwiftShakespeareLogic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C645D571B446A5200ED4746 /* Build configuration list for PBXNativeTarget "SwiftShakespeareLogic" */;
+			buildPhases = (
+				6C645D4F1B446A5200ED4746 /* Sources */,
+				6C645D501B446A5200ED4746 /* Frameworks */,
+				6C645D511B446A5200ED4746 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftShakespeareLogic;
+			productName = SwiftShakespeareLogic;
+			productReference = 6C645D531B446A5200ED4746 /* SwiftShakespeareLogic */;
+			productType = "com.apple.product-type.tool";
+		};
+		6C645D601B446E6A00ED4746 /* 99GreenBottles */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C645D651B446E6A00ED4746 /* Build configuration list for PBXNativeTarget "99GreenBottles" */;
+			buildPhases = (
+				6C645D5D1B446E6A00ED4746 /* Sources */,
+				6C645D5E1B446E6A00ED4746 /* Frameworks */,
+				6C645D5F1B446E6A00ED4746 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 99GreenBottles;
+			productName = 99GreenBottles;
+			productReference = 6C645D611B446E6A00ED4746 /* 99GreenBottles */;
+			productType = "com.apple.product-type.tool";
+		};
+		6C645D6C1B446F3800ED4746 /* 99GreenBottlesCPP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C645D711B446F3800ED4746 /* Build configuration list for PBXNativeTarget "99GreenBottlesCPP" */;
+			buildPhases = (
+				6C645D691B446F3800ED4746 /* Sources */,
+				6C645D6A1B446F3800ED4746 /* Frameworks */,
+				6C645D6B1B446F3800ED4746 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 99GreenBottlesCPP;
+			productName = 99GreenBottlesCPP;
+			productReference = 6C645D6D1B446F3800ED4746 /* 99GreenBottlesCPP */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6C645D3A1B4465CE00ED4746 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Rattle Media";
+				TargetAttributes = {
+					6C645D411B4465CE00ED4746 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					6C645D521B446A5200ED4746 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					6C645D601B446E6A00ED4746 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					6C645D6C1B446F3800ED4746 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = 6C645D3D1B4465CE00ED4746 /* Build configuration list for PBXProject "ShakespeareLogic" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6C645D391B4465CE00ED4746;
+			productRefGroup = 6C645D431B4465CE00ED4746 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6C645D411B4465CE00ED4746 /* ShakespeareLogic */,
+				6C645D521B446A5200ED4746 /* SwiftShakespeareLogic */,
+				6C645D601B446E6A00ED4746 /* 99GreenBottles */,
+				6C645D6C1B446F3800ED4746 /* 99GreenBottlesCPP */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6C645D3E1B4465CE00ED4746 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C645D461B4465CE00ED4746 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C645D4F1B446A5200ED4746 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C645D561B446A5200ED4746 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C645D5D1B446E6A00ED4746 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C645D641B446E6A00ED4746 /* main.swift in Sources */,
+				6C645D681B446E7300ED4746 /* 99GreenBottles.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C645D691B446F3800ED4746 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C645D701B446F3800ED4746 /* main.cpp in Sources */,
+				6C645D761B446F5800ED4746 /* 99GreenBottles.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		6C645D471B4465CE00ED4746 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		6C645D481B4465CE00ED4746 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		6C645D4A1B4465CE00ED4746 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6C645D4B1B4465CE00ED4746 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6C645D581B446A5200ED4746 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6C645D591B446A5200ED4746 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6C645D661B446E6A00ED4746 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6C645D671B446E6A00ED4746 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6C645D721B446F3800ED4746 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6C645D731B446F3800ED4746 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6C645D3D1B4465CE00ED4746 /* Build configuration list for PBXProject "ShakespeareLogic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C645D471B4465CE00ED4746 /* Debug */,
+				6C645D481B4465CE00ED4746 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C645D491B4465CE00ED4746 /* Build configuration list for PBXNativeTarget "ShakespeareLogic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C645D4A1B4465CE00ED4746 /* Debug */,
+				6C645D4B1B4465CE00ED4746 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6C645D571B446A5200ED4746 /* Build configuration list for PBXNativeTarget "SwiftShakespeareLogic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C645D581B446A5200ED4746 /* Debug */,
+				6C645D591B446A5200ED4746 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6C645D651B446E6A00ED4746 /* Build configuration list for PBXNativeTarget "99GreenBottles" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C645D661B446E6A00ED4746 /* Debug */,
+				6C645D671B446E6A00ED4746 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6C645D711B446F3800ED4746 /* Build configuration list for PBXNativeTarget "99GreenBottlesCPP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C645D721B446F3800ED4746 /* Debug */,
+				6C645D731B446F3800ED4746 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6C645D3A1B4465CE00ED4746 /* Project object */;
+}
