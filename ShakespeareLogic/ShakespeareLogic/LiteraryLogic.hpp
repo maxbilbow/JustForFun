@@ -20,8 +20,14 @@
  I have begun an ambitious project to rewrite all of Shakespeare’s literature in it...
  And compare it with C++
  */
-//class ShakespeareLogic {
-//public:
-//    static void toBe(bool toBe);
-//    static void askAboutTheBell(std::string * question);
-//};
+class Shakespeare {
+public:
+    ///To be or not to be...
+    static void toBe(bool toBe);
+};
+
+class Poetry {
+public:
+    ///For whom the bell tolls
+    static void askAboutTheBell(std::string * question);
+};

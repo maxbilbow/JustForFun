@@ -14,6 +14,26 @@
 			<key>orderHint</key>
 			<integer>3</integer>
 		</dict>
+		<key>GameOfLife.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>GameOfLifeSprite.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
+		<key>GameOfLifeSpriteTests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
+		<key>LiteratyLogincObjc.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 		<key>ShakespeareLogic.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -43,6 +63,31 @@
 			<true/>
 		</dict>
 		<key>6C645D6C1B446F3800ED4746</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6C83FAB81B4579830002F9B9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6C83FAC31B45E1CA0002F9B9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6C83FAD51B45E1CA0002F9B9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6C83FAE01B45E1CA0002F9B9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6CCE3AB91B455FC600944D9F</key>
 		<dict>
 			<key>primary</key>
 			<true/>

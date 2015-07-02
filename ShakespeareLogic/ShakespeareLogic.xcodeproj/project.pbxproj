@@ -13,7 +13,38 @@
 		6C645D681B446E7300ED4746 /* 99GreenBottles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C645D5B1B446E4800ED4746 /* 99GreenBottles.swift */; };
 		6C645D701B446F3800ED4746 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6C645D6F1B446F3800ED4746 /* main.cpp */; };
 		6C645D761B446F5800ED4746 /* 99GreenBottles.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6C645D741B446F5800ED4746 /* 99GreenBottles.cpp */; };
+		6C83FABC1B4579830002F9B9 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C83FABB1B4579830002F9B9 /* main.swift */; };
+		6C83FAC71B45E1CA0002F9B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C83FAC61B45E1CA0002F9B9 /* AppDelegate.swift */; };
+		6C83FAC91B45E1CA0002F9B9 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C83FAC81B45E1CA0002F9B9 /* GameScene.swift */; };
+		6C83FACB1B45E1CA0002F9B9 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 6C83FACA1B45E1CA0002F9B9 /* GameScene.sks */; };
+		6C83FACD1B45E1CA0002F9B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C83FACC1B45E1CA0002F9B9 /* Assets.xcassets */; };
+		6C83FAD01B45E1CA0002F9B9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C83FACE1B45E1CA0002F9B9 /* MainMenu.xib */; };
+		6C83FADB1B45E1CA0002F9B9 /* GameOfLifeSpriteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C83FADA1B45E1CA0002F9B9 /* GameOfLifeSpriteTests.swift */; };
+		6C83FAE61B45E1CA0002F9B9 /* GameOfLifeSpriteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C83FAE51B45E1CA0002F9B9 /* GameOfLifeSpriteUITests.swift */; };
+		6C83FAF21B45E20F0002F9B9 /* GameOfLife.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C83FAF11B45E20F0002F9B9 /* GameOfLife.swift */; };
+		6C83FAF31B45E2140002F9B9 /* GameOfLife.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C83FAF11B45E20F0002F9B9 /* GameOfLife.swift */; };
+		6C83FAF51B45E7390002F9B9 /* GameOfLifeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C83FAF41B45E7390002F9B9 /* GameOfLifeNode.swift */; };
+		6CCE3ABD1B455FC600944D9F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CCE3ABC1B455FC600944D9F /* main.m */; };
+		6CCE3AC51B45627600944D9F /* Shakespeare.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CCE3AC41B45627600944D9F /* Shakespeare.m */; };
+		6CCE3AC71B456A3A00944D9F /* assembly.s in Sources */ = {isa = PBXBuildFile; fileRef = 6CCE3AC61B456A3A00944D9F /* assembly.s */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6C83FAD71B45E1CA0002F9B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C645D3A1B4465CE00ED4746 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C83FAC31B45E1CA0002F9B9;
+			remoteInfo = GameOfLifeSprite;
+		};
+		6C83FAE21B45E1CA0002F9B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C645D3A1B4465CE00ED4746 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C83FAC31B45E1CA0002F9B9;
+			remoteInfo = GameOfLifeSprite;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		6C645D401B4465CE00ED4746 /* CopyFiles */ = {
@@ -52,13 +83,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		6C83FAB71B4579830002F9B9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		6CCE3AB81B455FC600944D9F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		6C645D421B4465CE00ED4746 /* ShakespeareLogic */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ShakespeareLogic; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C645D451B4465CE00ED4746 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		6C645D4C1B4465E500ED4746 /* ShakespeareLogic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShakespeareLogic.cpp; sourceTree = "<group>"; };
-		6C645D4D1B4465E500ED4746 /* ShakespeareLogic.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ShakespeareLogic.hpp; sourceTree = "<group>"; };
+		6C645D4C1B4465E500ED4746 /* LiteraryLogic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LiteraryLogic.cpp; sourceTree = "<group>"; };
+		6C645D4D1B4465E500ED4746 /* LiteraryLogic.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LiteraryLogic.hpp; sourceTree = "<group>"; };
 		6C645D531B446A5200ED4746 /* SwiftShakespeareLogic */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftShakespeareLogic; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C645D551B446A5200ED4746 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6C645D5B1B446E4800ED4746 /* 99GreenBottles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = 99GreenBottles.swift; path = ../SwiftShakespeareLogic/99GreenBottles.swift; sourceTree = "<group>"; };
@@ -68,6 +117,29 @@
 		6C645D6F1B446F3800ED4746 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		6C645D741B446F5800ED4746 /* 99GreenBottles.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 99GreenBottles.cpp; sourceTree = "<group>"; };
 		6C645D751B446F5800ED4746 /* 99GreenBottles.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = 99GreenBottles.hpp; sourceTree = "<group>"; };
+		6C83FAB91B4579830002F9B9 /* GameOfLife */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GameOfLife; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C83FABB1B4579830002F9B9 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		6C83FAC41B45E1CA0002F9B9 /* GameOfLifeSprite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameOfLifeSprite.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C83FAC61B45E1CA0002F9B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6C83FAC81B45E1CA0002F9B9 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		6C83FACA1B45E1CA0002F9B9 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		6C83FACC1B45E1CA0002F9B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6C83FACF1B45E1CA0002F9B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		6C83FAD11B45E1CA0002F9B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C83FAD61B45E1CA0002F9B9 /* GameOfLifeSpriteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameOfLifeSpriteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C83FADA1B45E1CA0002F9B9 /* GameOfLifeSpriteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOfLifeSpriteTests.swift; sourceTree = "<group>"; };
+		6C83FADC1B45E1CA0002F9B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C83FAE11B45E1CA0002F9B9 /* GameOfLifeSpriteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameOfLifeSpriteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C83FAE51B45E1CA0002F9B9 /* GameOfLifeSpriteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOfLifeSpriteUITests.swift; sourceTree = "<group>"; };
+		6C83FAE71B45E1CA0002F9B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C83FAF11B45E20F0002F9B9 /* GameOfLife.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOfLife.swift; sourceTree = "<group>"; };
+		6C83FAF41B45E7390002F9B9 /* GameOfLifeNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOfLifeNode.swift; sourceTree = "<group>"; };
+		6CCE3ABA1B455FC600944D9F /* LiteratyLogincObjc */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LiteratyLogincObjc; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CCE3ABC1B455FC600944D9F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6CCE3AC11B45617600944D9F /* ForWhomTheBell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForWhomTheBell.m; sourceTree = "<group>"; };
+		6CCE3AC31B45618300944D9F /* ForWhomTheBell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ForWhomTheBell.h; sourceTree = "<group>"; };
+		6CCE3AC41B45627600944D9F /* Shakespeare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shakespeare.m; sourceTree = "<group>"; };
+		6CCE3AC61B456A3A00944D9F /* assembly.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; name = assembly.s; path = ShakespeareLogic/assembly.s; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +171,41 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6C83FAB61B4579830002F9B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C83FAC11B45E1CA0002F9B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C83FAD31B45E1CA0002F9B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C83FADE1B45E1CA0002F9B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CCE3AB71B455FC600944D9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -106,9 +213,14 @@
 			isa = PBXGroup;
 			children = (
 				6C645D441B4465CE00ED4746 /* ShakespeareLogic */,
+				6CCE3ABB1B455FC600944D9F /* LiteratyLogincObjc */,
 				6C645D541B446A5200ED4746 /* SwiftShakespeareLogic */,
 				6C645D621B446E6A00ED4746 /* 99GreenBottles */,
 				6C645D6E1B446F3800ED4746 /* 99GreenBottlesCPP */,
+				6C83FABA1B4579830002F9B9 /* GameOfLife */,
+				6C83FAC51B45E1CA0002F9B9 /* GameOfLifeSprite */,
+				6C83FAD91B45E1CA0002F9B9 /* GameOfLifeSpriteTests */,
+				6C83FAE41B45E1CA0002F9B9 /* GameOfLifeSpriteUITests */,
 				6C645D431B4465CE00ED4746 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -120,6 +232,11 @@
 				6C645D531B446A5200ED4746 /* SwiftShakespeareLogic */,
 				6C645D611B446E6A00ED4746 /* 99GreenBottles */,
 				6C645D6D1B446F3800ED4746 /* 99GreenBottlesCPP */,
+				6CCE3ABA1B455FC600944D9F /* LiteratyLogincObjc */,
+				6C83FAB91B4579830002F9B9 /* GameOfLife */,
+				6C83FAC41B45E1CA0002F9B9 /* GameOfLifeSprite.app */,
+				6C83FAD61B45E1CA0002F9B9 /* GameOfLifeSpriteTests.xctest */,
+				6C83FAE11B45E1CA0002F9B9 /* GameOfLifeSpriteUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -127,9 +244,10 @@
 		6C645D441B4465CE00ED4746 /* ShakespeareLogic */ = {
 			isa = PBXGroup;
 			children = (
+				6CCE3AC61B456A3A00944D9F /* assembly.s */,
 				6C645D451B4465CE00ED4746 /* main.cpp */,
-				6C645D4C1B4465E500ED4746 /* ShakespeareLogic.cpp */,
-				6C645D4D1B4465E500ED4746 /* ShakespeareLogic.hpp */,
+				6C645D4C1B4465E500ED4746 /* LiteraryLogic.cpp */,
+				6C645D4D1B4465E500ED4746 /* LiteraryLogic.hpp */,
 			);
 			path = ShakespeareLogic;
 			sourceTree = "<group>";
@@ -159,6 +277,58 @@
 				6C645D751B446F5800ED4746 /* 99GreenBottles.hpp */,
 			);
 			path = 99GreenBottlesCPP;
+			sourceTree = "<group>";
+		};
+		6C83FABA1B4579830002F9B9 /* GameOfLife */ = {
+			isa = PBXGroup;
+			children = (
+				6C83FABB1B4579830002F9B9 /* main.swift */,
+			);
+			path = GameOfLife;
+			sourceTree = "<group>";
+		};
+		6C83FAC51B45E1CA0002F9B9 /* GameOfLifeSprite */ = {
+			isa = PBXGroup;
+			children = (
+				6C83FAC61B45E1CA0002F9B9 /* AppDelegate.swift */,
+				6C83FAC81B45E1CA0002F9B9 /* GameScene.swift */,
+				6C83FAF41B45E7390002F9B9 /* GameOfLifeNode.swift */,
+				6C83FACA1B45E1CA0002F9B9 /* GameScene.sks */,
+				6C83FACC1B45E1CA0002F9B9 /* Assets.xcassets */,
+				6C83FACE1B45E1CA0002F9B9 /* MainMenu.xib */,
+				6C83FAD11B45E1CA0002F9B9 /* Info.plist */,
+				6C83FAF11B45E20F0002F9B9 /* GameOfLife.swift */,
+			);
+			path = GameOfLifeSprite;
+			sourceTree = "<group>";
+		};
+		6C83FAD91B45E1CA0002F9B9 /* GameOfLifeSpriteTests */ = {
+			isa = PBXGroup;
+			children = (
+				6C83FADA1B45E1CA0002F9B9 /* GameOfLifeSpriteTests.swift */,
+				6C83FADC1B45E1CA0002F9B9 /* Info.plist */,
+			);
+			path = GameOfLifeSpriteTests;
+			sourceTree = "<group>";
+		};
+		6C83FAE41B45E1CA0002F9B9 /* GameOfLifeSpriteUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6C83FAE51B45E1CA0002F9B9 /* GameOfLifeSpriteUITests.swift */,
+				6C83FAE71B45E1CA0002F9B9 /* Info.plist */,
+			);
+			path = GameOfLifeSpriteUITests;
+			sourceTree = "<group>";
+		};
+		6CCE3ABB1B455FC600944D9F /* LiteratyLogincObjc */ = {
+			isa = PBXGroup;
+			children = (
+				6CCE3ABC1B455FC600944D9F /* main.m */,
+				6CCE3AC41B45627600944D9F /* Shakespeare.m */,
+				6CCE3AC11B45617600944D9F /* ForWhomTheBell.m */,
+				6CCE3AC31B45618300944D9F /* ForWhomTheBell.h */,
+			);
+			path = LiteratyLogincObjc;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +402,93 @@
 			productReference = 6C645D6D1B446F3800ED4746 /* 99GreenBottlesCPP */;
 			productType = "com.apple.product-type.tool";
 		};
+		6C83FAB81B4579830002F9B9 /* GameOfLife */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C83FABF1B4579830002F9B9 /* Build configuration list for PBXNativeTarget "GameOfLife" */;
+			buildPhases = (
+				6C83FAB51B4579830002F9B9 /* Sources */,
+				6C83FAB61B4579830002F9B9 /* Frameworks */,
+				6C83FAB71B4579830002F9B9 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GameOfLife;
+			productName = GameOfLife;
+			productReference = 6C83FAB91B4579830002F9B9 /* GameOfLife */;
+			productType = "com.apple.product-type.tool";
+		};
+		6C83FAC31B45E1CA0002F9B9 /* GameOfLifeSprite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C83FAE81B45E1CA0002F9B9 /* Build configuration list for PBXNativeTarget "GameOfLifeSprite" */;
+			buildPhases = (
+				6C83FAC01B45E1CA0002F9B9 /* Sources */,
+				6C83FAC11B45E1CA0002F9B9 /* Frameworks */,
+				6C83FAC21B45E1CA0002F9B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GameOfLifeSprite;
+			productName = GameOfLifeSprite;
+			productReference = 6C83FAC41B45E1CA0002F9B9 /* GameOfLifeSprite.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6C83FAD51B45E1CA0002F9B9 /* GameOfLifeSpriteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C83FAEB1B45E1CA0002F9B9 /* Build configuration list for PBXNativeTarget "GameOfLifeSpriteTests" */;
+			buildPhases = (
+				6C83FAD21B45E1CA0002F9B9 /* Sources */,
+				6C83FAD31B45E1CA0002F9B9 /* Frameworks */,
+				6C83FAD41B45E1CA0002F9B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6C83FAD81B45E1CA0002F9B9 /* PBXTargetDependency */,
+			);
+			name = GameOfLifeSpriteTests;
+			productName = GameOfLifeSpriteTests;
+			productReference = 6C83FAD61B45E1CA0002F9B9 /* GameOfLifeSpriteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6C83FAE01B45E1CA0002F9B9 /* GameOfLifeSpriteUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C83FAEE1B45E1CA0002F9B9 /* Build configuration list for PBXNativeTarget "GameOfLifeSpriteUITests" */;
+			buildPhases = (
+				6C83FADD1B45E1CA0002F9B9 /* Sources */,
+				6C83FADE1B45E1CA0002F9B9 /* Frameworks */,
+				6C83FADF1B45E1CA0002F9B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6C83FAE31B45E1CA0002F9B9 /* PBXTargetDependency */,
+			);
+			name = GameOfLifeSpriteUITests;
+			productName = GameOfLifeSpriteUITests;
+			productReference = 6C83FAE11B45E1CA0002F9B9 /* GameOfLifeSpriteUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		6CCE3AB91B455FC600944D9F /* LiteratyLogincObjc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CCE3ABE1B455FC600944D9F /* Build configuration list for PBXNativeTarget "LiteratyLogincObjc" */;
+			buildPhases = (
+				6CCE3AB61B455FC600944D9F /* Sources */,
+				6CCE3AB71B455FC600944D9F /* Frameworks */,
+				6CCE3AB81B455FC600944D9F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LiteratyLogincObjc;
+			productName = LiteratyLogincObjc;
+			productReference = 6CCE3ABA1B455FC600944D9F /* LiteratyLogincObjc */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -253,6 +510,24 @@
 					6C645D6C1B446F3800ED4746 = {
 						CreatedOnToolsVersion = 7.0;
 					};
+					6C83FAB81B4579830002F9B9 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					6C83FAC31B45E1CA0002F9B9 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 668T39KN4E;
+					};
+					6C83FAD51B45E1CA0002F9B9 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 6C83FAC31B45E1CA0002F9B9;
+					};
+					6C83FAE01B45E1CA0002F9B9 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 6C83FAC31B45E1CA0002F9B9;
+					};
+					6CCE3AB91B455FC600944D9F = {
+						CreatedOnToolsVersion = 7.0;
+					};
 				};
 			};
 			buildConfigurationList = 6C645D3D1B4465CE00ED4746 /* Build configuration list for PBXProject "ShakespeareLogic" */;
@@ -261,6 +536,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 6C645D391B4465CE00ED4746;
 			productRefGroup = 6C645D431B4465CE00ED4746 /* Products */;
@@ -271,9 +547,41 @@
 				6C645D521B446A5200ED4746 /* SwiftShakespeareLogic */,
 				6C645D601B446E6A00ED4746 /* 99GreenBottles */,
 				6C645D6C1B446F3800ED4746 /* 99GreenBottlesCPP */,
+				6CCE3AB91B455FC600944D9F /* LiteratyLogincObjc */,
+				6C83FAB81B4579830002F9B9 /* GameOfLife */,
+				6C83FAC31B45E1CA0002F9B9 /* GameOfLifeSprite */,
+				6C83FAD51B45E1CA0002F9B9 /* GameOfLifeSpriteTests */,
+				6C83FAE01B45E1CA0002F9B9 /* GameOfLifeSpriteUITests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6C83FAC21B45E1CA0002F9B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C83FACD1B45E1CA0002F9B9 /* Assets.xcassets in Resources */,
+				6C83FACB1B45E1CA0002F9B9 /* GameScene.sks in Resources */,
+				6C83FAD01B45E1CA0002F9B9 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C83FAD41B45E1CA0002F9B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C83FADF1B45E1CA0002F9B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6C645D3E1B4465CE00ED4746 /* Sources */ = {
@@ -281,6 +589,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6C645D461B4465CE00ED4746 /* main.cpp in Sources */,
+				6CCE3AC71B456A3A00944D9F /* assembly.s in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,7 +619,76 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6C83FAB51B4579830002F9B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C83FAF31B45E2140002F9B9 /* GameOfLife.swift in Sources */,
+				6C83FABC1B4579830002F9B9 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C83FAC01B45E1CA0002F9B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C83FAF51B45E7390002F9B9 /* GameOfLifeNode.swift in Sources */,
+				6C83FAC91B45E1CA0002F9B9 /* GameScene.swift in Sources */,
+				6C83FAF21B45E20F0002F9B9 /* GameOfLife.swift in Sources */,
+				6C83FAC71B45E1CA0002F9B9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C83FAD21B45E1CA0002F9B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C83FADB1B45E1CA0002F9B9 /* GameOfLifeSpriteTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C83FADD1B45E1CA0002F9B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C83FAE61B45E1CA0002F9B9 /* GameOfLifeSpriteUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CCE3AB61B455FC600944D9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CCE3ABD1B455FC600944D9F /* main.m in Sources */,
+				6CCE3AC51B45627600944D9F /* Shakespeare.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6C83FAD81B45E1CA0002F9B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6C83FAC31B45E1CA0002F9B9 /* GameOfLifeSprite */;
+			targetProxy = 6C83FAD71B45E1CA0002F9B9 /* PBXContainerItemProxy */;
+		};
+		6C83FAE31B45E1CA0002F9B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6C83FAC31B45E1CA0002F9B9 /* GameOfLifeSprite */;
+			targetProxy = 6C83FAE21B45E1CA0002F9B9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6C83FACE1B45E1CA0002F9B9 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C83FACF1B45E1CA0002F9B9 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		6C645D471B4465CE00ED4746 /* Debug */ = {
@@ -448,6 +826,114 @@
 			};
 			name = Release;
 		};
+		6C83FABD1B4579830002F9B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6C83FABE1B4579830002F9B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6C83FAE91B45E1CA0002F9B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = GameOfLifeSprite/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rattle.GameOfLifeSprite;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6C83FAEA1B45E1CA0002F9B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = GameOfLifeSprite/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rattle.GameOfLifeSprite;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6C83FAEC1B45E1CA0002F9B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = GameOfLifeSpriteTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rattle.GameOfLifeSpriteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GameOfLifeSprite.app/Contents/MacOS/GameOfLifeSprite";
+			};
+			name = Debug;
+		};
+		6C83FAED1B45E1CA0002F9B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = GameOfLifeSpriteTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rattle.GameOfLifeSpriteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GameOfLifeSprite.app/Contents/MacOS/GameOfLifeSprite";
+			};
+			name = Release;
+		};
+		6C83FAEF1B45E1CA0002F9B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = GameOfLifeSpriteUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rattle.GameOfLifeSpriteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GameOfLifeSprite;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		6C83FAF01B45E1CA0002F9B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = GameOfLifeSpriteUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rattle.GameOfLifeSpriteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GameOfLifeSprite;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+		6CCE3ABF1B455FC600944D9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6CCE3AC01B455FC600944D9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -467,6 +953,7 @@
 				6C645D4B1B4465CE00ED4746 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6C645D571B446A5200ED4746 /* Build configuration list for PBXNativeTarget "SwiftShakespeareLogic" */ = {
 			isa = XCConfigurationList;
@@ -475,6 +962,7 @@
 				6C645D591B446A5200ED4746 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6C645D651B446E6A00ED4746 /* Build configuration list for PBXNativeTarget "99GreenBottles" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +971,7 @@
 				6C645D671B446E6A00ED4746 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6C645D711B446F3800ED4746 /* Build configuration list for PBXNativeTarget "99GreenBottlesCPP" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +980,48 @@
 				6C645D731B446F3800ED4746 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C83FABF1B4579830002F9B9 /* Build configuration list for PBXNativeTarget "GameOfLife" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C83FABD1B4579830002F9B9 /* Debug */,
+				6C83FABE1B4579830002F9B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6C83FAE81B45E1CA0002F9B9 /* Build configuration list for PBXNativeTarget "GameOfLifeSprite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C83FAE91B45E1CA0002F9B9 /* Debug */,
+				6C83FAEA1B45E1CA0002F9B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6C83FAEB1B45E1CA0002F9B9 /* Build configuration list for PBXNativeTarget "GameOfLifeSpriteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C83FAEC1B45E1CA0002F9B9 /* Debug */,
+				6C83FAED1B45E1CA0002F9B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6C83FAEE1B45E1CA0002F9B9 /* Build configuration list for PBXNativeTarget "GameOfLifeSpriteUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C83FAEF1B45E1CA0002F9B9 /* Debug */,
+				6C83FAF01B45E1CA0002F9B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6CCE3ABE1B455FC600944D9F /* Build configuration list for PBXNativeTarget "LiteratyLogincObjc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CCE3ABF1B455FC600944D9F /* Debug */,
+				6CCE3AC01B455FC600944D9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
