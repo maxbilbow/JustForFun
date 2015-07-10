@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5072F3801B4E660E00A1EF07 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 5072F37F1B4E660E00A1EF07 /* main.c */; };
+		5072F3861B4E669000A1EF07 /* LinkedList.c in Sources */ = {isa = PBXBuildFile; fileRef = 5072F3841B4E669000A1EF07 /* LinkedList.c */; };
+		5072F38E1B4E69CD00A1EF07 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5072F38D1B4E69CD00A1EF07 /* main.cpp */; };
+		5072F3991B4ECF9400A1EF07 /* LIntList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5072F3951B4ECA2600A1EF07 /* LIntList.cpp */; };
 		6C645D461B4465CE00ED4746 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6C645D451B4465CE00ED4746 /* main.cpp */; };
 		6C645D561B446A5200ED4746 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C645D551B446A5200ED4746 /* main.swift */; };
 		6C645D641B446E6A00ED4746 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C645D631B446E6A00ED4746 /* main.swift */; };
@@ -19,8 +23,6 @@
 		6C83FACB1B45E1CA0002F9B9 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 6C83FACA1B45E1CA0002F9B9 /* GameScene.sks */; };
 		6C83FACD1B45E1CA0002F9B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C83FACC1B45E1CA0002F9B9 /* Assets.xcassets */; };
 		6C83FAD01B45E1CA0002F9B9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C83FACE1B45E1CA0002F9B9 /* MainMenu.xib */; };
-		6C83FADB1B45E1CA0002F9B9 /* GameOfLifeSpriteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C83FADA1B45E1CA0002F9B9 /* GameOfLifeSpriteTests.swift */; };
-		6C83FAE61B45E1CA0002F9B9 /* GameOfLifeSpriteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C83FAE51B45E1CA0002F9B9 /* GameOfLifeSpriteUITests.swift */; };
 		6C83FAF21B45E20F0002F9B9 /* GameOfLife.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C83FAF11B45E20F0002F9B9 /* GameOfLife.swift */; };
 		6C83FAF31B45E2140002F9B9 /* GameOfLife.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C83FAF11B45E20F0002F9B9 /* GameOfLife.swift */; };
 		6C83FAF51B45E7390002F9B9 /* GameOfLifeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C83FAF41B45E7390002F9B9 /* GameOfLifeNode.swift */; };
@@ -47,6 +49,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		5072F37B1B4E660E00A1EF07 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		5072F3891B4E69CD00A1EF07 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		6C645D401B4465CE00ED4746 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -104,11 +124,21 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		6C645D421B4465CE00ED4746 /* ShakespeareLogic */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ShakespeareLogic; sourceTree = BUILT_PRODUCTS_DIR; };
+		5072F37D1B4E660E00A1EF07 /* BasicKnoledge */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BasicKnoledge; sourceTree = BUILT_PRODUCTS_DIR; };
+		5072F37F1B4E660E00A1EF07 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		5072F3841B4E669000A1EF07 /* LinkedList.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = LinkedList.c; sourceTree = "<group>"; };
+		5072F3851B4E669000A1EF07 /* LinkedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkedList.h; sourceTree = "<group>"; };
+		5072F38B1B4E69CD00A1EF07 /* BacicCPP */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BacicCPP; sourceTree = BUILT_PRODUCTS_DIR; };
+		5072F38D1B4E69CD00A1EF07 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		5072F3921B4E69F400A1EF07 /* LinkedList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LinkedList.cpp; sourceTree = "<group>"; };
+		5072F3931B4E69F400A1EF07 /* LinkedList.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LinkedList.hpp; sourceTree = "<group>"; };
+		5072F3951B4ECA2600A1EF07 /* LIntList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LIntList.cpp; sourceTree = "<group>"; };
+		5072F3961B4ECA2600A1EF07 /* LIntList.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LIntList.hpp; sourceTree = "<group>"; };
+		6C645D421B4465CE00ED4746 /* JustForFun */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = JustForFun; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C645D451B4465CE00ED4746 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		6C645D4C1B4465E500ED4746 /* LiteraryLogic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LiteraryLogic.cpp; sourceTree = "<group>"; };
 		6C645D4D1B4465E500ED4746 /* LiteraryLogic.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LiteraryLogic.hpp; sourceTree = "<group>"; };
-		6C645D531B446A5200ED4746 /* SwiftShakespeareLogic */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftShakespeareLogic; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C645D531B446A5200ED4746 /* JustForFun */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = JustForFun; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C645D551B446A5200ED4746 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6C645D5B1B446E4800ED4746 /* 99GreenBottles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = 99GreenBottles.swift; path = ../SwiftShakespeareLogic/99GreenBottles.swift; sourceTree = "<group>"; };
 		6C645D611B446E6A00ED4746 /* 99GreenBottles */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 99GreenBottles; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,11 +157,7 @@
 		6C83FACF1B45E1CA0002F9B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		6C83FAD11B45E1CA0002F9B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6C83FAD61B45E1CA0002F9B9 /* GameOfLifeSpriteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameOfLifeSpriteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6C83FADA1B45E1CA0002F9B9 /* GameOfLifeSpriteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOfLifeSpriteTests.swift; sourceTree = "<group>"; };
-		6C83FADC1B45E1CA0002F9B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6C83FAE11B45E1CA0002F9B9 /* GameOfLifeSpriteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameOfLifeSpriteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6C83FAE51B45E1CA0002F9B9 /* GameOfLifeSpriteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOfLifeSpriteUITests.swift; sourceTree = "<group>"; };
-		6C83FAE71B45E1CA0002F9B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6C83FAF11B45E20F0002F9B9 /* GameOfLife.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOfLife.swift; sourceTree = "<group>"; };
 		6C83FAF41B45E7390002F9B9 /* GameOfLifeNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOfLifeNode.swift; sourceTree = "<group>"; };
 		6CCE3ABA1B455FC600944D9F /* LiteratyLogincObjc */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LiteratyLogincObjc; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -143,6 +169,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5072F37A1B4E660E00A1EF07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5072F3881B4E69CD00A1EF07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6C645D3F1B4465CE00ED4746 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -209,6 +249,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5072F37E1B4E660E00A1EF07 /* BasicKnoledge */ = {
+			isa = PBXGroup;
+			children = (
+				5072F37F1B4E660E00A1EF07 /* main.c */,
+				5072F3841B4E669000A1EF07 /* LinkedList.c */,
+				5072F3851B4E669000A1EF07 /* LinkedList.h */,
+			);
+			path = BasicKnoledge;
+			sourceTree = "<group>";
+		};
+		5072F38C1B4E69CD00A1EF07 /* BacicCPP */ = {
+			isa = PBXGroup;
+			children = (
+				5072F38D1B4E69CD00A1EF07 /* main.cpp */,
+				5072F3921B4E69F400A1EF07 /* LinkedList.cpp */,
+				5072F3931B4E69F400A1EF07 /* LinkedList.hpp */,
+				5072F3951B4ECA2600A1EF07 /* LIntList.cpp */,
+				5072F3961B4ECA2600A1EF07 /* LIntList.hpp */,
+			);
+			path = BacicCPP;
+			sourceTree = "<group>";
+		};
 		6C645D391B4465CE00ED4746 = {
 			isa = PBXGroup;
 			children = (
@@ -219,8 +281,8 @@
 				6C645D6E1B446F3800ED4746 /* 99GreenBottlesCPP */,
 				6C83FABA1B4579830002F9B9 /* GameOfLife */,
 				6C83FAC51B45E1CA0002F9B9 /* GameOfLifeSprite */,
-				6C83FAD91B45E1CA0002F9B9 /* GameOfLifeSpriteTests */,
-				6C83FAE41B45E1CA0002F9B9 /* GameOfLifeSpriteUITests */,
+				5072F37E1B4E660E00A1EF07 /* BasicKnoledge */,
+				5072F38C1B4E69CD00A1EF07 /* BacicCPP */,
 				6C645D431B4465CE00ED4746 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -228,8 +290,8 @@
 		6C645D431B4465CE00ED4746 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6C645D421B4465CE00ED4746 /* ShakespeareLogic */,
-				6C645D531B446A5200ED4746 /* SwiftShakespeareLogic */,
+				6C645D421B4465CE00ED4746 /* JustForFun */,
+				6C645D531B446A5200ED4746 /* JustForFun */,
 				6C645D611B446E6A00ED4746 /* 99GreenBottles */,
 				6C645D6D1B446F3800ED4746 /* 99GreenBottlesCPP */,
 				6CCE3ABA1B455FC600944D9F /* LiteratyLogincObjc */,
@@ -237,6 +299,8 @@
 				6C83FAC41B45E1CA0002F9B9 /* GameOfLifeSprite.app */,
 				6C83FAD61B45E1CA0002F9B9 /* GameOfLifeSpriteTests.xctest */,
 				6C83FAE11B45E1CA0002F9B9 /* GameOfLifeSpriteUITests.xctest */,
+				5072F37D1B4E660E00A1EF07 /* BasicKnoledge */,
+				5072F38B1B4E69CD00A1EF07 /* BacicCPP */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -302,24 +366,6 @@
 			path = GameOfLifeSprite;
 			sourceTree = "<group>";
 		};
-		6C83FAD91B45E1CA0002F9B9 /* GameOfLifeSpriteTests */ = {
-			isa = PBXGroup;
-			children = (
-				6C83FADA1B45E1CA0002F9B9 /* GameOfLifeSpriteTests.swift */,
-				6C83FADC1B45E1CA0002F9B9 /* Info.plist */,
-			);
-			path = GameOfLifeSpriteTests;
-			sourceTree = "<group>";
-		};
-		6C83FAE41B45E1CA0002F9B9 /* GameOfLifeSpriteUITests */ = {
-			isa = PBXGroup;
-			children = (
-				6C83FAE51B45E1CA0002F9B9 /* GameOfLifeSpriteUITests.swift */,
-				6C83FAE71B45E1CA0002F9B9 /* Info.plist */,
-			);
-			path = GameOfLifeSpriteUITests;
-			sourceTree = "<group>";
-		};
 		6CCE3ABB1B455FC600944D9F /* LiteratyLogincObjc */ = {
 			isa = PBXGroup;
 			children = (
@@ -334,9 +380,43 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6C645D411B4465CE00ED4746 /* ShakespeareLogic */ = {
+		5072F37C1B4E660E00A1EF07 /* BasicKnoledge */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6C645D491B4465CE00ED4746 /* Build configuration list for PBXNativeTarget "ShakespeareLogic" */;
+			buildConfigurationList = 5072F3811B4E660E00A1EF07 /* Build configuration list for PBXNativeTarget "BasicKnoledge" */;
+			buildPhases = (
+				5072F3791B4E660E00A1EF07 /* Sources */,
+				5072F37A1B4E660E00A1EF07 /* Frameworks */,
+				5072F37B1B4E660E00A1EF07 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BasicKnoledge;
+			productName = BasicKnoledge;
+			productReference = 5072F37D1B4E660E00A1EF07 /* BasicKnoledge */;
+			productType = "com.apple.product-type.tool";
+		};
+		5072F38A1B4E69CD00A1EF07 /* BacicCPP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5072F38F1B4E69CD00A1EF07 /* Build configuration list for PBXNativeTarget "BacicCPP" */;
+			buildPhases = (
+				5072F3871B4E69CD00A1EF07 /* Sources */,
+				5072F3881B4E69CD00A1EF07 /* Frameworks */,
+				5072F3891B4E69CD00A1EF07 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BacicCPP;
+			productName = BacicCPP;
+			productReference = 5072F38B1B4E69CD00A1EF07 /* BacicCPP */;
+			productType = "com.apple.product-type.tool";
+		};
+		6C645D411B4465CE00ED4746 /* JustForFun */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C645D491B4465CE00ED4746 /* Build configuration list for PBXNativeTarget "JustForFun" */;
 			buildPhases = (
 				6C645D3E1B4465CE00ED4746 /* Sources */,
 				6C645D3F1B4465CE00ED4746 /* Frameworks */,
@@ -346,14 +426,14 @@
 			);
 			dependencies = (
 			);
-			name = ShakespeareLogic;
+			name = JustForFun;
 			productName = ShakespeareLogic;
-			productReference = 6C645D421B4465CE00ED4746 /* ShakespeareLogic */;
+			productReference = 6C645D421B4465CE00ED4746 /* JustForFun */;
 			productType = "com.apple.product-type.tool";
 		};
-		6C645D521B446A5200ED4746 /* SwiftShakespeareLogic */ = {
+		6C645D521B446A5200ED4746 /* SwiftJustForFun */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6C645D571B446A5200ED4746 /* Build configuration list for PBXNativeTarget "SwiftShakespeareLogic" */;
+			buildConfigurationList = 6C645D571B446A5200ED4746 /* Build configuration list for PBXNativeTarget "SwiftJustForFun" */;
 			buildPhases = (
 				6C645D4F1B446A5200ED4746 /* Sources */,
 				6C645D501B446A5200ED4746 /* Frameworks */,
@@ -363,9 +443,9 @@
 			);
 			dependencies = (
 			);
-			name = SwiftShakespeareLogic;
+			name = SwiftJustForFun;
 			productName = SwiftShakespeareLogic;
-			productReference = 6C645D531B446A5200ED4746 /* SwiftShakespeareLogic */;
+			productReference = 6C645D531B446A5200ED4746 /* JustForFun */;
 			productType = "com.apple.product-type.tool";
 		};
 		6C645D601B446E6A00ED4746 /* 99GreenBottles */ = {
@@ -498,6 +578,12 @@
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Rattle Media";
 				TargetAttributes = {
+					5072F37C1B4E660E00A1EF07 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					5072F38A1B4E69CD00A1EF07 = {
+						CreatedOnToolsVersion = 7.0;
+					};
 					6C645D411B4465CE00ED4746 = {
 						CreatedOnToolsVersion = 7.0;
 					};
@@ -530,7 +616,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6C645D3D1B4465CE00ED4746 /* Build configuration list for PBXProject "ShakespeareLogic" */;
+			buildConfigurationList = 6C645D3D1B4465CE00ED4746 /* Build configuration list for PBXProject "JustForFun" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -543,8 +629,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6C645D411B4465CE00ED4746 /* ShakespeareLogic */,
-				6C645D521B446A5200ED4746 /* SwiftShakespeareLogic */,
+				6C645D411B4465CE00ED4746 /* JustForFun */,
+				6C645D521B446A5200ED4746 /* SwiftJustForFun */,
 				6C645D601B446E6A00ED4746 /* 99GreenBottles */,
 				6C645D6C1B446F3800ED4746 /* 99GreenBottlesCPP */,
 				6CCE3AB91B455FC600944D9F /* LiteratyLogincObjc */,
@@ -552,6 +638,8 @@
 				6C83FAC31B45E1CA0002F9B9 /* GameOfLifeSprite */,
 				6C83FAD51B45E1CA0002F9B9 /* GameOfLifeSpriteTests */,
 				6C83FAE01B45E1CA0002F9B9 /* GameOfLifeSpriteUITests */,
+				5072F37C1B4E660E00A1EF07 /* BasicKnoledge */,
+				5072F38A1B4E69CD00A1EF07 /* BacicCPP */,
 			);
 		};
 /* End PBXProject section */
@@ -584,6 +672,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5072F3791B4E660E00A1EF07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5072F3861B4E669000A1EF07 /* LinkedList.c in Sources */,
+				5072F3801B4E660E00A1EF07 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5072F3871B4E69CD00A1EF07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5072F3991B4ECF9400A1EF07 /* LIntList.cpp in Sources */,
+				5072F38E1B4E69CD00A1EF07 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6C645D3E1B4465CE00ED4746 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -643,7 +749,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C83FADB1B45E1CA0002F9B9 /* GameOfLifeSpriteTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -651,7 +756,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C83FAE61B45E1CA0002F9B9 /* GameOfLifeSpriteUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -691,6 +795,38 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		5072F3821B4E660E00A1EF07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5072F3831B4E660E00A1EF07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5072F3901B4E69CD00A1EF07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5072F3911B4E69CD00A1EF07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		6C645D471B4465CE00ED4746 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -771,21 +907,21 @@
 		6C645D4A1B4465CE00ED4746 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = JustForFun;
 			};
 			name = Debug;
 		};
 		6C645D4B1B4465CE00ED4746 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = JustForFun;
 			};
 			name = Release;
 		};
 		6C645D581B446A5200ED4746 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = JustForFun;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -793,7 +929,7 @@
 		6C645D591B446A5200ED4746 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = JustForFun;
 			};
 			name = Release;
 		};
@@ -937,7 +1073,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6C645D3D1B4465CE00ED4746 /* Build configuration list for PBXProject "ShakespeareLogic" */ = {
+		5072F3811B4E660E00A1EF07 /* Build configuration list for PBXNativeTarget "BasicKnoledge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5072F3821B4E660E00A1EF07 /* Debug */,
+				5072F3831B4E660E00A1EF07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5072F38F1B4E69CD00A1EF07 /* Build configuration list for PBXNativeTarget "BacicCPP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5072F3901B4E69CD00A1EF07 /* Debug */,
+				5072F3911B4E69CD00A1EF07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C645D3D1B4465CE00ED4746 /* Build configuration list for PBXProject "JustForFun" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6C645D471B4465CE00ED4746 /* Debug */,
@@ -946,7 +1100,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6C645D491B4465CE00ED4746 /* Build configuration list for PBXNativeTarget "ShakespeareLogic" */ = {
+		6C645D491B4465CE00ED4746 /* Build configuration list for PBXNativeTarget "JustForFun" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6C645D4A1B4465CE00ED4746 /* Debug */,
@@ -955,7 +1109,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6C645D571B446A5200ED4746 /* Build configuration list for PBXNativeTarget "SwiftShakespeareLogic" */ = {
+		6C645D571B446A5200ED4746 /* Build configuration list for PBXNativeTarget "SwiftJustForFun" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6C645D581B446A5200ED4746 /* Debug */,
@@ -989,6 +1143,7 @@
 				6C83FABE1B4579830002F9B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6C83FAE81B45E1CA0002F9B9 /* Build configuration list for PBXNativeTarget "GameOfLifeSprite" */ = {
 			isa = XCConfigurationList;
@@ -997,6 +1152,7 @@
 				6C83FAEA1B45E1CA0002F9B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6C83FAEB1B45E1CA0002F9B9 /* Build configuration list for PBXNativeTarget "GameOfLifeSpriteTests" */ = {
 			isa = XCConfigurationList;
@@ -1005,6 +1161,7 @@
 				6C83FAED1B45E1CA0002F9B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6C83FAEE1B45E1CA0002F9B9 /* Build configuration list for PBXNativeTarget "GameOfLifeSpriteUITests" */ = {
 			isa = XCConfigurationList;
@@ -1013,6 +1170,7 @@
 				6C83FAF01B45E1CA0002F9B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6CCE3ABE1B455FC600944D9F /* Build configuration list for PBXNativeTarget "LiteratyLogincObjc" */ = {
 			isa = XCConfigurationList;
