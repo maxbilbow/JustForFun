@@ -20,6 +20,9 @@ typedef struct node {
     struct node * next;
 } node_t;
 
+
+int reverse_list(node_t ** head);
+
 void print_list(node_t * head);
 
 void ll_int_append(node_t * head, int val);

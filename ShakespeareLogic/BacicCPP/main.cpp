@@ -1,26 +1,22 @@
 //
 //  main.cpp
-//  BacicCPP
+//  JustForFun
 //
-//  Created by Max Bilbow on 09/07/2015.
+//  Created by Max Bilbow on 10/07/2015.
 //  Copyright © 2015 Rattle Media. All rights reserved.
 //
 
-//#include "LinkedList.hpp"
 #include <iostream>
-//#include "LinkedList.hpp"
-#include "LIntList.hpp"
+#include "LinkedList.hpp"
+#include "Fibb.hpp"
+using namespace std;
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+int main (int argc, char *argv[])
+{
+    cout << "Hello world!" << endl;
 //    LinkedListTest();
-//    LinkedList<int> list = LinkedList<int>();//malloc(sizeof(LinkedList<int>));
-//    list.append(1);
-//    list.append(2);
-//    list.append(3);
-//    list.append(4);
-//    list.remove_by_value( 3);
-//    list.print();
+    
+    FibbTest();
     return 0;
 }
+

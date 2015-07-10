@@ -30,60 +30,59 @@
 //};
 
 template <class Value> class LinkedList {
-protected:
+public:
 typedef struct _Node {
+public:
     Value value;
     _Node * next;
 } Node;
 private:
     int _count;
     Node * _head;// = new Node<Value>();
-    Value * _last;
+//    Value * _last;
 
 public:
-    int count() {
-        return _count;
-    };
-    
-    Node * lastNode() {
-    	if (_head == NULL) {
-    		return NULL;
-    	}
-    	Node * last = _head;
-    	while (last->next != NULL) {
-    		last = last->next;
-    	}
-    	return last;
-	};
-    
     LinkedList();
     
-    Value first() {
-        return this->_head->value;
-    };
+    int count();
     
-    Value last() {
-        return *this->_last;
-    };
+    Node * lastNode();
     
-    bool isEmpty() {
-    	return this->_count == 0;
-    };
+    Value first();
     
-    ///TODO
-    Node * removeNode(Node * node);
+    Node * firstNode();
+    
+    Value last();
+    
+    bool isEmpty();
+    
+//    ///Removes and returns the mathcing node
+//    Node * removeNode(Node * node);
    
-    ///TODO 
+    ///removes and returns value at index
+    Value removeValueAtIndex(int index);
+
+    ///Removes and returns the node at index
     Node * removeNodeAtIndex(int index);
+
+//     Node * insertValueAtIndex(int index);
     
-    ///TODO 
-    Node * InsertValueAtIndex(int index);
+    ///Necessary for reversing a list
+    Node * asNodeArray();
     
+    ///Copy of list as an array
+    Value * asArray();
+    
+    ///Removes all elements, beginnig with the first.
+    void removeAll();
+    
+    ///Appends and returns appended value
     Value append(Value value);
-     
+    
+    ///appends an array of given size (sizeof(array))
+    void append(Value array[], size_t size);
 //    static void print_list(Node<Value> * head);
     void print(void);
-    
 //    static int pop(Node<Value> ** head);
     Value pop(Node ** head);
    
@@ -91,7 +90,10 @@ public:
     Value remove_by_value(int val);
     
    	Value getValue(int index);
+    
+    Node * getNode(int index);
    	
+    
    	///Returns previous value or throws error if out of range
    	Value setValue(int index);
   	
