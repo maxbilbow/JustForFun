@@ -1,10 +1,13 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="MonoForFun/main.cpp">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../ADHDSimulator/ProCrastinate/Assets/ADHDSim/Scripts/Timer.cs">
     <Files>
-      <File FileName="MonoForFun/main.cpp" Line="1" Column="1" />
-      <File FileName="MonoForFun/BasicCPP/LinkedList.hpp" Line="78" Column="9" />
-      <File FileName="MonoForFun/BasicCPP/LinkedList.cpp" Line="172" Column="49" />
+      <File FileName="../../ADHDSimulator/ProCrastinate/Assets/ADHDSim/Scripts/Timer.cs" Line="92" Column="10" />
+      <File FileName="../../ADHDSimulator/ProCrastinate/Assets/ADHDSim/Scripts/GameController.cs" Line="100" Column="56" />
+      <File FileName="../../ADHDSimulator/ProCrastinate/Assets/ADHDSim/Scripts/GameData.cs" Line="55" Column="39" />
+      <File FileName="../../ADHDSimulator/ProCrastinate/Assets/ADHDSim/Scripts/GameCenter.cs" Line="27" Column="1" />
+      <File FileName="../../ADHDSimulator/ProCrastinate/Assets/ADHDSim/Scripts/ClockBehaviour.cs" Line="77" Column="26" />
+      <File FileName="../../ADHDSimulator/ProCrastinate/Assets/ADHDSim/Scripts/ABonus.cs" Line="20" Column="34" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
