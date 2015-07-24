@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		5072F3801B4E660E00A1EF07 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 5072F37F1B4E660E00A1EF07 /* main.c */; };
 		5072F3861B4E669000A1EF07 /* LinkedList.c in Sources */ = {isa = PBXBuildFile; fileRef = 5072F3841B4E669000A1EF07 /* LinkedList.c */; };
+		50CF454A1B5F89C3009EF64C /* SDLLink.mm in Sources */ = {isa = PBXBuildFile; fileRef = 50CF45481B5F89C3009EF64C /* SDLLink.mm */; };
+		50CF454B1B5F89C3009EF64C /* SDLLink.mm in Sources */ = {isa = PBXBuildFile; fileRef = 50CF45481B5F89C3009EF64C /* SDLLink.mm */; };
+		50CF45581B5F947E009EF64C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 50CF45571B5F947E009EF64C /* main.cpp */; };
+		50CF455E1B5F94A2009EF64C /* PixelController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 50CF455C1B5F94A2009EF64C /* PixelController.cpp */; };
+		50CF45621B5F9571009EF64C /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50CF45611B5F9571009EF64C /* SDL2.framework */; };
+		50CF45631B5F9571009EF64C /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50CF45611B5F9571009EF64C /* SDL2.framework */; };
+		50CF45641B5F9571009EF64C /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50CF45611B5F9571009EF64C /* SDL2.framework */; };
 		50F006851B502884005A6D8D /* LinkedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 50F006801B502884005A6D8D /* LinkedList.cpp */; };
 		50F006891B5028C9005A6D8D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 50F006881B5028C9005A6D8D /* main.cpp */; };
 		50F0068C1B50673C005A6D8D /* Fibb.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 50F0068A1B50673C005A6D8D /* Fibb.cpp */; };
@@ -60,6 +67,15 @@
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 		5072F3891B4E69CD00A1EF07 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		50CF45531B5F947E009EF64C /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -130,6 +146,15 @@
 		5072F3841B4E669000A1EF07 /* LinkedList.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = LinkedList.c; sourceTree = "<group>"; };
 		5072F3851B4E669000A1EF07 /* LinkedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkedList.h; sourceTree = "<group>"; };
 		5072F38B1B4E69CD00A1EF07 /* BacicCPP */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BacicCPP; sourceTree = BUILT_PRODUCTS_DIR; };
+		50CF45461B5F89C3009EF64C /* GameOfLife-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GameOfLife-Bridging-Header.h"; sourceTree = "<group>"; };
+		50CF45471B5F89C3009EF64C /* GameOfLifeSprite-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GameOfLifeSprite-Bridging-Header.h"; sourceTree = "<group>"; };
+		50CF45481B5F89C3009EF64C /* SDLLink.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = SDLLink.mm; path = GameOfLife/SDLLink.mm; sourceTree = SOURCE_ROOT; };
+		50CF45491B5F89C3009EF64C /* SDLLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDLLink.h; path = GameOfLife/SDLLink.h; sourceTree = SOURCE_ROOT; };
+		50CF45551B5F947E009EF64C /* PixelControll */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PixelControll; sourceTree = BUILT_PRODUCTS_DIR; };
+		50CF45571B5F947E009EF64C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		50CF455C1B5F94A2009EF64C /* PixelController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PixelController.cpp; sourceTree = "<group>"; };
+		50CF455D1B5F94A2009EF64C /* PixelController.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PixelController.hpp; sourceTree = "<group>"; };
+		50CF45611B5F9571009EF64C /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDL2.framework; sourceTree = "<group>"; };
 		50F006801B502884005A6D8D /* LinkedList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = LinkedList.cpp; path = ../../MonoForFun/MonoForFun/BasicCPP/LinkedList.cpp; sourceTree = "<group>"; };
 		50F006811B502884005A6D8D /* LinkedList.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = LinkedList.hpp; path = ../../MonoForFun/MonoForFun/BasicCPP/LinkedList.hpp; sourceTree = "<group>"; };
 		50F006881B5028C9005A6D8D /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
@@ -184,6 +209,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		50CF45521B5F947E009EF64C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50CF45641B5F9571009EF64C /* SDL2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6C645D3F1B4465CE00ED4746 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -216,6 +249,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50CF45621B5F9571009EF64C /* SDL2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,6 +257,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50CF45631B5F9571009EF64C /* SDL2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,9 +307,20 @@
 			path = BacicCPP;
 			sourceTree = "<group>";
 		};
+		50CF45561B5F947E009EF64C /* PixelControll */ = {
+			isa = PBXGroup;
+			children = (
+				50CF45571B5F947E009EF64C /* main.cpp */,
+				50CF455C1B5F94A2009EF64C /* PixelController.cpp */,
+				50CF455D1B5F94A2009EF64C /* PixelController.hpp */,
+			);
+			path = PixelControll;
+			sourceTree = "<group>";
+		};
 		6C645D391B4465CE00ED4746 = {
 			isa = PBXGroup;
 			children = (
+				50CF45611B5F9571009EF64C /* SDL2.framework */,
 				6C645D441B4465CE00ED4746 /* ShakespeareLogic */,
 				6CCE3ABB1B455FC600944D9F /* LiteratyLogincObjc */,
 				6C645D541B446A5200ED4746 /* SwiftShakespeareLogic */,
@@ -284,6 +330,7 @@
 				6C83FAC51B45E1CA0002F9B9 /* GameOfLifeSprite */,
 				5072F37E1B4E660E00A1EF07 /* BasicKnoledge */,
 				5072F38C1B4E69CD00A1EF07 /* BacicCPP */,
+				50CF45561B5F947E009EF64C /* PixelControll */,
 				6C645D431B4465CE00ED4746 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -302,6 +349,7 @@
 				6C83FAE11B45E1CA0002F9B9 /* GameOfLifeSpriteUITests.xctest */,
 				5072F37D1B4E660E00A1EF07 /* BasicKnoledge */,
 				5072F38B1B4E69CD00A1EF07 /* BacicCPP */,
+				50CF45551B5F947E009EF64C /* PixelControll */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -363,6 +411,10 @@
 				6C83FACE1B45E1CA0002F9B9 /* MainMenu.xib */,
 				6C83FAD11B45E1CA0002F9B9 /* Info.plist */,
 				6C83FAF11B45E20F0002F9B9 /* GameOfLife.swift */,
+				50CF45481B5F89C3009EF64C /* SDLLink.mm */,
+				50CF45491B5F89C3009EF64C /* SDLLink.h */,
+				50CF45461B5F89C3009EF64C /* GameOfLife-Bridging-Header.h */,
+				50CF45471B5F89C3009EF64C /* GameOfLifeSprite-Bridging-Header.h */,
 			);
 			path = GameOfLifeSprite;
 			sourceTree = "<group>";
@@ -413,6 +465,23 @@
 			name = BacicCPP;
 			productName = BacicCPP;
 			productReference = 5072F38B1B4E69CD00A1EF07 /* BacicCPP */;
+			productType = "com.apple.product-type.tool";
+		};
+		50CF45541B5F947E009EF64C /* PixelControll */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50CF45591B5F947E009EF64C /* Build configuration list for PBXNativeTarget "PixelControll" */;
+			buildPhases = (
+				50CF45511B5F947E009EF64C /* Sources */,
+				50CF45521B5F947E009EF64C /* Frameworks */,
+				50CF45531B5F947E009EF64C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PixelControll;
+			productName = PixelControll;
+			productReference = 50CF45551B5F947E009EF64C /* PixelControll */;
 			productType = "com.apple.product-type.tool";
 		};
 		6C645D411B4465CE00ED4746 /* JustForFun */ = {
@@ -576,6 +645,10 @@
 		6C645D3A1B4465CE00ED4746 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					New,
+				);
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Rattle Media";
 				TargetAttributes = {
@@ -583,6 +656,9 @@
 						CreatedOnToolsVersion = 7.0;
 					};
 					5072F38A1B4E69CD00A1EF07 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					50CF45541B5F947E009EF64C = {
 						CreatedOnToolsVersion = 7.0;
 					};
 					6C645D411B4465CE00ED4746 = {
@@ -641,6 +717,7 @@
 				6C83FAE01B45E1CA0002F9B9 /* GameOfLifeSpriteUITests */,
 				5072F37C1B4E660E00A1EF07 /* BasicKnoledge */,
 				5072F38A1B4E69CD00A1EF07 /* BacicCPP */,
+				50CF45541B5F947E009EF64C /* PixelControll */,
 			);
 		};
 /* End PBXProject section */
@@ -692,6 +769,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		50CF45511B5F947E009EF64C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50CF455E1B5F94A2009EF64C /* PixelController.cpp in Sources */,
+				50CF45581B5F947E009EF64C /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6C645D3E1B4465CE00ED4746 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -731,6 +817,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50CF454A1B5F89C3009EF64C /* SDLLink.mm in Sources */,
 				6C83FAF31B45E2140002F9B9 /* GameOfLife.swift in Sources */,
 				6C83FABC1B4579830002F9B9 /* main.swift in Sources */,
 			);
@@ -742,6 +829,7 @@
 			files = (
 				6C83FAF51B45E7390002F9B9 /* GameOfLifeNode.swift in Sources */,
 				6C83FAC91B45E1CA0002F9B9 /* GameScene.swift in Sources */,
+				50CF454B1B5F89C3009EF64C /* SDLLink.mm in Sources */,
 				6C83FAF21B45E20F0002F9B9 /* GameOfLife.swift in Sources */,
 				6C83FAC71B45E1CA0002F9B9 /* AppDelegate.swift in Sources */,
 			);
@@ -822,6 +910,22 @@
 			name = Debug;
 		};
 		5072F3911B4E69CD00A1EF07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		50CF455A1B5F947E009EF64C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		50CF455B1B5F947E009EF64C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
@@ -967,7 +1071,14 @@
 		6C83FABD1B4579830002F9B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GameOfLifeSprite/GameOfLife-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -975,7 +1086,14 @@
 		6C83FABE1B4579830002F9B9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GameOfLifeSprite/GameOfLife-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -983,12 +1101,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = GameOfLifeSprite/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rattle.GameOfLifeSprite;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GameOfLifeSprite/GameOfLifeSprite-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -997,12 +1117,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = GameOfLifeSprite/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rattle.GameOfLifeSprite;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GameOfLifeSprite/GameOfLifeSprite-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -1092,6 +1214,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		50CF45591B5F947E009EF64C /* Build configuration list for PBXNativeTarget "PixelControll" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50CF455A1B5F947E009EF64C /* Debug */,
+				50CF455B1B5F947E009EF64C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		6C645D3D1B4465CE00ED4746 /* Build configuration list for PBXProject "JustForFun" */ = {
 			isa = XCConfigurationList;

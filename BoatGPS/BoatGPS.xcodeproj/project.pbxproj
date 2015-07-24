@@ -1,0 +1,547 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		50634B641B3695B900DB923A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50634B631B3695B900DB923A /* AppDelegate.swift */; };
+		50634B661B3695B900DB923A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50634B651B3695B900DB923A /* ViewController.swift */; };
+		50634B691B3695B900DB923A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50634B671B3695B900DB923A /* Main.storyboard */; };
+		50634B6C1B3695B900DB923A /* BoatGPS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 50634B6A1B3695B900DB923A /* BoatGPS.xcdatamodeld */; };
+		50634B6E1B3695B900DB923A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50634B6D1B3695B900DB923A /* Assets.xcassets */; };
+		50634B711B3695B900DB923A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50634B6F1B3695B900DB923A /* LaunchScreen.storyboard */; };
+		50634B7C1B3695B900DB923A /* BoatGPSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50634B7B1B3695B900DB923A /* BoatGPSTests.swift */; };
+		50634B871B3695B900DB923A /* BoatGPSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50634B861B3695B900DB923A /* BoatGPSUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		50634B781B3695B900DB923A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50634B581B3695B900DB923A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50634B5F1B3695B900DB923A;
+			remoteInfo = BoatGPS;
+		};
+		50634B831B3695B900DB923A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50634B581B3695B900DB923A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50634B5F1B3695B900DB923A;
+			remoteInfo = BoatGPS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		50634B601B3695B900DB923A /* BoatGPS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoatGPS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		50634B631B3695B900DB923A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		50634B651B3695B900DB923A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		50634B681B3695B900DB923A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		50634B6B1B3695B900DB923A /* BoatGPS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BoatGPS.xcdatamodel; sourceTree = "<group>"; };
+		50634B6D1B3695B900DB923A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		50634B701B3695B900DB923A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		50634B721B3695B900DB923A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50634B771B3695B900DB923A /* BoatGPSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoatGPSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		50634B7B1B3695B900DB923A /* BoatGPSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoatGPSTests.swift; sourceTree = "<group>"; };
+		50634B7D1B3695B900DB923A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50634B821B3695B900DB923A /* BoatGPSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoatGPSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		50634B861B3695B900DB923A /* BoatGPSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoatGPSUITests.swift; sourceTree = "<group>"; };
+		50634B881B3695B900DB923A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50F626B81B3ACA1000FB5F35 /* BoatGPS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = BoatGPS.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		50634B5D1B3695B900DB923A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50634B741B3695B900DB923A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50634B7F1B3695B900DB923A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		50634B571B3695B900DB923A = {
+			isa = PBXGroup;
+			children = (
+				50634B621B3695B900DB923A /* BoatGPS */,
+				50634B7A1B3695B900DB923A /* BoatGPSTests */,
+				50634B851B3695B900DB923A /* BoatGPSUITests */,
+				50634B611B3695B900DB923A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		50634B611B3695B900DB923A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50634B601B3695B900DB923A /* BoatGPS.app */,
+				50634B771B3695B900DB923A /* BoatGPSTests.xctest */,
+				50634B821B3695B900DB923A /* BoatGPSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		50634B621B3695B900DB923A /* BoatGPS */ = {
+			isa = PBXGroup;
+			children = (
+				50F626B81B3ACA1000FB5F35 /* BoatGPS.entitlements */,
+				50634B631B3695B900DB923A /* AppDelegate.swift */,
+				50634B651B3695B900DB923A /* ViewController.swift */,
+				50634B671B3695B900DB923A /* Main.storyboard */,
+				50634B6D1B3695B900DB923A /* Assets.xcassets */,
+				50634B6F1B3695B900DB923A /* LaunchScreen.storyboard */,
+				50634B721B3695B900DB923A /* Info.plist */,
+				50634B6A1B3695B900DB923A /* BoatGPS.xcdatamodeld */,
+			);
+			path = BoatGPS;
+			sourceTree = "<group>";
+		};
+		50634B7A1B3695B900DB923A /* BoatGPSTests */ = {
+			isa = PBXGroup;
+			children = (
+				50634B7B1B3695B900DB923A /* BoatGPSTests.swift */,
+				50634B7D1B3695B900DB923A /* Info.plist */,
+			);
+			path = BoatGPSTests;
+			sourceTree = "<group>";
+		};
+		50634B851B3695B900DB923A /* BoatGPSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				50634B861B3695B900DB923A /* BoatGPSUITests.swift */,
+				50634B881B3695B900DB923A /* Info.plist */,
+			);
+			path = BoatGPSUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		50634B5F1B3695B900DB923A /* BoatGPS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50634B8B1B3695B900DB923A /* Build configuration list for PBXNativeTarget "BoatGPS" */;
+			buildPhases = (
+				50634B5C1B3695B900DB923A /* Sources */,
+				50634B5D1B3695B900DB923A /* Frameworks */,
+				50634B5E1B3695B900DB923A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BoatGPS;
+			productName = BoatGPS;
+			productReference = 50634B601B3695B900DB923A /* BoatGPS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		50634B761B3695B900DB923A /* BoatGPSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50634B8E1B3695B900DB923A /* Build configuration list for PBXNativeTarget "BoatGPSTests" */;
+			buildPhases = (
+				50634B731B3695B900DB923A /* Sources */,
+				50634B741B3695B900DB923A /* Frameworks */,
+				50634B751B3695B900DB923A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50634B791B3695B900DB923A /* PBXTargetDependency */,
+			);
+			name = BoatGPSTests;
+			productName = BoatGPSTests;
+			productReference = 50634B771B3695B900DB923A /* BoatGPSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		50634B811B3695B900DB923A /* BoatGPSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50634B911B3695B900DB923A /* Build configuration list for PBXNativeTarget "BoatGPSUITests" */;
+			buildPhases = (
+				50634B7E1B3695B900DB923A /* Sources */,
+				50634B7F1B3695B900DB923A /* Frameworks */,
+				50634B801B3695B900DB923A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50634B841B3695B900DB923A /* PBXTargetDependency */,
+			);
+			name = BoatGPSUITests;
+			productName = BoatGPSUITests;
+			productReference = 50634B821B3695B900DB923A /* BoatGPSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		50634B581B3695B900DB923A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Rattle Media Ltd";
+				TargetAttributes = {
+					50634B5F1B3695B900DB923A = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 668T39KN4E;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
+					};
+					50634B761B3695B900DB923A = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 50634B5F1B3695B900DB923A;
+					};
+					50634B811B3695B900DB923A = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 50634B5F1B3695B900DB923A;
+					};
+				};
+			};
+			buildConfigurationList = 50634B5B1B3695B900DB923A /* Build configuration list for PBXProject "BoatGPS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 50634B571B3695B900DB923A;
+			productRefGroup = 50634B611B3695B900DB923A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				50634B5F1B3695B900DB923A /* BoatGPS */,
+				50634B761B3695B900DB923A /* BoatGPSTests */,
+				50634B811B3695B900DB923A /* BoatGPSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		50634B5E1B3695B900DB923A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50634B711B3695B900DB923A /* LaunchScreen.storyboard in Resources */,
+				50634B6E1B3695B900DB923A /* Assets.xcassets in Resources */,
+				50634B691B3695B900DB923A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50634B751B3695B900DB923A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50634B801B3695B900DB923A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		50634B5C1B3695B900DB923A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50634B6C1B3695B900DB923A /* BoatGPS.xcdatamodeld in Sources */,
+				50634B661B3695B900DB923A /* ViewController.swift in Sources */,
+				50634B641B3695B900DB923A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50634B731B3695B900DB923A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50634B7C1B3695B900DB923A /* BoatGPSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50634B7E1B3695B900DB923A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50634B871B3695B900DB923A /* BoatGPSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		50634B791B3695B900DB923A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50634B5F1B3695B900DB923A /* BoatGPS */;
+			targetProxy = 50634B781B3695B900DB923A /* PBXContainerItemProxy */;
+		};
+		50634B841B3695B900DB923A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50634B5F1B3695B900DB923A /* BoatGPS */;
+			targetProxy = 50634B831B3695B900DB923A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		50634B671B3695B900DB923A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50634B681B3695B900DB923A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		50634B6F1B3695B900DB923A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50634B701B3695B900DB923A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		50634B891B3695B900DB923A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		50634B8A1B3695B900DB923A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		50634B8C1B3695B900DB923A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BoatGPS/BoatGPS.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = BoatGPS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rattle.BoatGPS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		50634B8D1B3695B900DB923A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BoatGPS/BoatGPS.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = BoatGPS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rattle.BoatGPS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		50634B8F1B3695B900DB923A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BoatGPSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rattle.BoatGPSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BoatGPS.app/BoatGPS";
+			};
+			name = Debug;
+		};
+		50634B901B3695B900DB923A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BoatGPSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rattle.BoatGPSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BoatGPS.app/BoatGPS";
+			};
+			name = Release;
+		};
+		50634B921B3695B900DB923A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BoatGPSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rattle.BoatGPSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BoatGPS;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		50634B931B3695B900DB923A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BoatGPSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rattle.BoatGPSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BoatGPS;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		50634B5B1B3695B900DB923A /* Build configuration list for PBXProject "BoatGPS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50634B891B3695B900DB923A /* Debug */,
+				50634B8A1B3695B900DB923A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50634B8B1B3695B900DB923A /* Build configuration list for PBXNativeTarget "BoatGPS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50634B8C1B3695B900DB923A /* Debug */,
+				50634B8D1B3695B900DB923A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50634B8E1B3695B900DB923A /* Build configuration list for PBXNativeTarget "BoatGPSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50634B8F1B3695B900DB923A /* Debug */,
+				50634B901B3695B900DB923A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50634B911B3695B900DB923A /* Build configuration list for PBXNativeTarget "BoatGPSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50634B921B3695B900DB923A /* Debug */,
+				50634B931B3695B900DB923A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		50634B6A1B3695B900DB923A /* BoatGPS.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				50634B6B1B3695B900DB923A /* BoatGPS.xcdatamodel */,
+			);
+			currentVersion = 50634B6B1B3695B900DB923A /* BoatGPS.xcdatamodel */;
+			path = BoatGPS.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 50634B581B3695B900DB923A /* Project object */;
+}

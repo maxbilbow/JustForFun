@@ -39,6 +39,11 @@
 			<key>orderHint</key>
 			<integer>4</integer>
 		</dict>
+		<key>PixelControll.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>9</integer>
+		</dict>
 		<key>ShakespeareLogic.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -58,6 +63,11 @@
 			<true/>
 		</dict>
 		<key>5072F38A1B4E69CD00A1EF07</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>50CF45541B5F947E009EF64C</key>
 		<dict>
 			<key>primary</key>
 			<true/>

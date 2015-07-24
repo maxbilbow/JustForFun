@@ -38,9 +38,11 @@
     <Compile Include="Main.cs" />
     <Compile Include="AssemblyInfo.cs" />
     <Compile Include="CsvReader.cs" />
+    <Compile Include="GoogleSheetReader.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <None Include="Pro-crastinate - Form responses 1.csv" />
+    <None Include="Google_Data_API_Setup_2.2.0.0.msi" />
   </ItemGroup>
 </Project>

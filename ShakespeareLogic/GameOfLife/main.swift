@@ -18,17 +18,16 @@ import Foundation
 //"time"
 //)
 
-
-let life = Life.new(width: 40, height: 15)
-for var i = 0; i < 300; i++ {
-    life.step()
-    print(life)//"\x0c", l) // Clear screen and print field.
-    //time.Sleep(time.Second / 30)
+func GameOfLife() {
+    let life = Life.new(width: 40, height: 15)
+    for var i = 0; i < 300; i++ {
+        life.step()
+        print(life)//"\x0c", l) // Clear screen and print field.
+        //time.Sleep(time.Second / 30)
+    }
 }
 
-
-
-
+SDLLinkRun()
 
 
 

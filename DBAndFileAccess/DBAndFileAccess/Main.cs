@@ -68,7 +68,7 @@ namespace DBAndFileAccess
 			return list;
 		}
 
-		public static void Main (string[] args)
+		public static void TestCsv ()
 		{
 			float[] testTimes = { 10f, 20f, 30f, 45f, 60f, 120f, 3000f, 6000f, 80000f };
 			foreach (float time in testTimes) {
@@ -79,6 +79,10 @@ namespace DBAndFileAccess
 				}
 			}
 
+		}
+
+		public static void Main(string[] args) {
+			
 		}
 	}
 }
