@@ -1,0 +1,8 @@
+package rmx;
+
+public interface IEvent {
+	String type;
+	EventStatus status;
+	boolean IsType (IEvent theEvent);
+	boolean HasStatus (EventStatus status) ;
+}
