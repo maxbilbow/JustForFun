@@ -50,7 +50,7 @@
 		50C43C5E1B679E9200AD2FAC /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		50C43C641B67A00600AD2FAC /* NotificationCenter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NotificationCenter.cpp; sourceTree = "<group>"; };
 		50C43C651B67A00600AD2FAC /* NotificationCenter.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NotificationCenter.hpp; sourceTree = "<group>"; };
-		50C43C6C1B67A0A900AD2FAC /* Interfaces.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Interfaces.hpp; sourceTree = "<group>"; };
+		50C43C6C1B67A0A900AD2FAC /* EventListener.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = EventListener.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +109,7 @@
 				50C43C521B679E6500AD2FAC /* Info.plist */,
 				50C43C641B67A00600AD2FAC /* NotificationCenter.cpp */,
 				50C43C651B67A00600AD2FAC /* NotificationCenter.hpp */,
-				50C43C6C1B67A0A900AD2FAC /* Interfaces.hpp */,
+				50C43C6C1B67A0A900AD2FAC /* EventListener.hpp */,
 			);
 			path = RMXKit;
 			sourceTree = "<group>";

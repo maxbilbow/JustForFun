@@ -26,12 +26,13 @@ public:
     }
     
     virtual void OnEventDidEnd(AnEvent theEvent, Object args) {
-        std::cout << "   Event Started: " << theEvent << ", with args: " << args << std::endl;
+        std::cout << "     Event Ended: " << theEvent << ", with args: " << args << std::endl;
     }
     virtual void SendMessage(AnEvent message){
         std::cout << "Message Received: " << message << std::endl;
     }
-} ;
+};
+
 
 //typedef _EventListener * EventListener;
 
