@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
+		<key>AiCuboBridge.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>RMXKit.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -23,6 +28,21 @@
 			<true/>
 		</dict>
 		<key>50C43C5B1B679E9200AD2FAC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>50D026401B695D8200895093</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>50D026521B695D8200895093</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>50D0265D1B695D8200895093</key>
 		<dict>
 			<key>primary</key>
 			<true/>

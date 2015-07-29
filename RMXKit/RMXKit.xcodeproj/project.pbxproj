@@ -21,7 +21,34 @@
 		50C43C691B67A01C00AD2FAC /* RMXKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 50C43C4C1B679E6500AD2FAC /* RMXKit.h */; };
 		50C43C6A1B67A01C00AD2FAC /* RMXKitPriv.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 50C43C4E1B679E6500AD2FAC /* RMXKitPriv.hpp */; };
 		50C43C6B1B67A01C00AD2FAC /* RMXKit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 50C43C501B679E6500AD2FAC /* RMXKit.cpp */; };
+		50D026441B695D8200895093 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D026431B695D8200895093 /* AppDelegate.swift */; };
+		50D026461B695D8200895093 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D026451B695D8200895093 /* GameViewController.swift */; };
+		50D026481B695D8200895093 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 50D026471B695D8200895093 /* Shaders.metal */; };
+		50D0264A1B695D8200895093 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50D026491B695D8200895093 /* Assets.xcassets */; };
+		50D0264D1B695D8200895093 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50D0264B1B695D8200895093 /* MainMenu.xib */; };
+		50D026721B695E7400895093 /* CBridge.c in Sources */ = {isa = PBXBuildFile; fileRef = 50D0266F1B695E7400895093 /* CBridge.c */; };
+		50D026751B69633800895093 /* OpenGLView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 50D026731B69633800895093 /* OpenGLView.cpp */; };
+		50D026761B69633800895093 /* OpenGLView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 50D026731B69633800895093 /* OpenGLView.cpp */; };
+		50D026821B69653300895093 /* Values.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 50D026791B69653300895093 /* Values.cpp */; };
+		50D026831B69653300895093 /* RMOShapes.c in Sources */ = {isa = PBXBuildFile; fileRef = 50D0267B1B69653300895093 /* RMOShapes.c */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		50D026541B695D8200895093 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50C43C3E1B679E6500AD2FAC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50D026401B695D8200895093;
+			remoteInfo = AiCuboBridge;
+		};
+		50D0265F1B695D8200895093 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50C43C3E1B679E6500AD2FAC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50D026401B695D8200895093;
+			remoteInfo = AiCuboBridge;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		50C43C5A1B679E9200AD2FAC /* CopyFiles */ = {
@@ -51,6 +78,28 @@
 		50C43C641B67A00600AD2FAC /* NotificationCenter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NotificationCenter.cpp; sourceTree = "<group>"; };
 		50C43C651B67A00600AD2FAC /* NotificationCenter.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NotificationCenter.hpp; sourceTree = "<group>"; };
 		50C43C6C1B67A0A900AD2FAC /* EventListener.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = EventListener.hpp; sourceTree = "<group>"; };
+		50D026411B695D8200895093 /* AiCuboBridge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AiCuboBridge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		50D026431B695D8200895093 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		50D026451B695D8200895093 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		50D026471B695D8200895093 /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		50D026491B695D8200895093 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		50D0264C1B695D8200895093 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		50D0264E1B695D8200895093 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50D026531B695D8200895093 /* AiCuboBridgeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AiCuboBridgeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		50D0265E1B695D8200895093 /* AiCuboBridgeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AiCuboBridgeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		50D0266E1B695E7400895093 /* AiCuboBridge-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AiCuboBridge-Bridging-Header.h"; sourceTree = "<group>"; };
+		50D0266F1B695E7400895093 /* CBridge.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CBridge.c; sourceTree = "<group>"; };
+		50D026701B695E7400895093 /* CBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBridge.h; sourceTree = "<group>"; };
+		50D026731B69633800895093 /* OpenGLView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OpenGLView.cpp; sourceTree = "<group>"; };
+		50D026741B69633800895093 /* OpenGLView.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = OpenGLView.hpp; sourceTree = "<group>"; };
+		50D026781B69653300895093 /* Values.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Values.h; sourceTree = "<group>"; };
+		50D026791B69653300895093 /* Values.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Values.cpp; sourceTree = "<group>"; };
+		50D0267A1B69653300895093 /* RMOShapes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMOShapes.h; sourceTree = "<group>"; };
+		50D0267B1B69653300895093 /* RMOShapes.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = RMOShapes.c; sourceTree = "<group>"; };
+		50D0267C1B69653300895093 /* DesktopInput.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = DesktopInput.hpp; sourceTree = "<group>"; };
+		50D0267D1B69653300895093 /* DesktopInput.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DesktopInput.cpp; sourceTree = "<group>"; };
+		50D0267E1B69653300895093 /* MouseInput.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MouseInput.hpp; sourceTree = "<group>"; };
+		50D0267F1B69653300895093 /* MouseInput.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MouseInput.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +118,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		50D0263E1B695D8200895093 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50D026501B695D8200895093 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50D0265B1B695D8200895093 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,6 +148,7 @@
 				50C43C6D1B67A5C300AD2FAC /* LinkedList */,
 				50C43C4B1B679E6500AD2FAC /* RMXKit */,
 				50C43C5D1B679E9200AD2FAC /* AiCubo */,
+				50D026421B695D8200895093 /* AiCuboBridge */,
 				50C43C481B679E6500AD2FAC /* Frameworks */,
 				50C43C471B679E6500AD2FAC /* Products */,
 			);
@@ -88,6 +159,9 @@
 			children = (
 				50C43C461B679E6500AD2FAC /* RMXKit.bundle */,
 				50C43C5C1B679E9200AD2FAC /* AiCubo */,
+				50D026411B695D8200895093 /* AiCuboBridge.app */,
+				50D026531B695D8200895093 /* AiCuboBridgeTests.xctest */,
+				50D0265E1B695D8200895093 /* AiCuboBridgeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -117,7 +191,10 @@
 		50C43C5D1B679E9200AD2FAC /* AiCubo */ = {
 			isa = PBXGroup;
 			children = (
+				50D026771B69653300895093 /* OSX */,
 				50C43C5E1B679E9200AD2FAC /* main.cpp */,
+				50D026731B69633800895093 /* OpenGLView.cpp */,
+				50D026741B69633800895093 /* OpenGLView.hpp */,
 			);
 			path = AiCubo;
 			sourceTree = "<group>";
@@ -131,6 +208,37 @@
 				509BC17E1B68A389007172B6 /* LinkedList.hpp */,
 			);
 			path = LinkedList;
+			sourceTree = "<group>";
+		};
+		50D026421B695D8200895093 /* AiCuboBridge */ = {
+			isa = PBXGroup;
+			children = (
+				50D026431B695D8200895093 /* AppDelegate.swift */,
+				50D0266F1B695E7400895093 /* CBridge.c */,
+				50D026701B695E7400895093 /* CBridge.h */,
+				50D026451B695D8200895093 /* GameViewController.swift */,
+				50D026471B695D8200895093 /* Shaders.metal */,
+				50D026491B695D8200895093 /* Assets.xcassets */,
+				50D0264B1B695D8200895093 /* MainMenu.xib */,
+				50D0264E1B695D8200895093 /* Info.plist */,
+				50D0266E1B695E7400895093 /* AiCuboBridge-Bridging-Header.h */,
+			);
+			path = AiCuboBridge;
+			sourceTree = "<group>";
+		};
+		50D026771B69653300895093 /* OSX */ = {
+			isa = PBXGroup;
+			children = (
+				50D026781B69653300895093 /* Values.h */,
+				50D026791B69653300895093 /* Values.cpp */,
+				50D0267A1B69653300895093 /* RMOShapes.h */,
+				50D0267B1B69653300895093 /* RMOShapes.c */,
+				50D0267C1B69653300895093 /* DesktopInput.hpp */,
+				50D0267D1B69653300895093 /* DesktopInput.cpp */,
+				50D0267E1B69653300895093 /* MouseInput.hpp */,
+				50D0267F1B69653300895093 /* MouseInput.cpp */,
+			);
+			path = OSX;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,12 +293,66 @@
 			productReference = 50C43C5C1B679E9200AD2FAC /* AiCubo */;
 			productType = "com.apple.product-type.tool";
 		};
+		50D026401B695D8200895093 /* AiCuboBridge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50D0266B1B695D8200895093 /* Build configuration list for PBXNativeTarget "AiCuboBridge" */;
+			buildPhases = (
+				50D0263D1B695D8200895093 /* Sources */,
+				50D0263E1B695D8200895093 /* Frameworks */,
+				50D0263F1B695D8200895093 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AiCuboBridge;
+			productName = AiCuboBridge;
+			productReference = 50D026411B695D8200895093 /* AiCuboBridge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		50D026521B695D8200895093 /* AiCuboBridgeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50D0266C1B695D8200895093 /* Build configuration list for PBXNativeTarget "AiCuboBridgeTests" */;
+			buildPhases = (
+				50D0264F1B695D8200895093 /* Sources */,
+				50D026501B695D8200895093 /* Frameworks */,
+				50D026511B695D8200895093 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50D026551B695D8200895093 /* PBXTargetDependency */,
+			);
+			name = AiCuboBridgeTests;
+			productName = AiCuboBridgeTests;
+			productReference = 50D026531B695D8200895093 /* AiCuboBridgeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		50D0265D1B695D8200895093 /* AiCuboBridgeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50D0266D1B695D8200895093 /* Build configuration list for PBXNativeTarget "AiCuboBridgeUITests" */;
+			buildPhases = (
+				50D0265A1B695D8200895093 /* Sources */,
+				50D0265B1B695D8200895093 /* Frameworks */,
+				50D0265C1B695D8200895093 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50D026601B695D8200895093 /* PBXTargetDependency */,
+			);
+			name = AiCuboBridgeUITests;
+			productName = AiCuboBridgeUITests;
+			productReference = 50D0265E1B695D8200895093 /* AiCuboBridgeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		50C43C3E1B679E6500AD2FAC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Rattle Media Ltd";
 				TargetAttributes = {
@@ -200,6 +362,17 @@
 					50C43C5B1B679E9200AD2FAC = {
 						CreatedOnToolsVersion = 7.0;
 					};
+					50D026401B695D8200895093 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					50D026521B695D8200895093 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 50D026401B695D8200895093;
+					};
+					50D0265D1B695D8200895093 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 50D026401B695D8200895093;
+					};
 				};
 			};
 			buildConfigurationList = 50C43C411B679E6500AD2FAC /* Build configuration list for PBXProject "RMXKit" */;
@@ -208,6 +381,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 50C43C3D1B679E6500AD2FAC;
 			productRefGroup = 50C43C471B679E6500AD2FAC /* Products */;
@@ -216,9 +390,38 @@
 			targets = (
 				50C43C451B679E6500AD2FAC /* RMXKit */,
 				50C43C5B1B679E9200AD2FAC /* AiCubo */,
+				50D026401B695D8200895093 /* AiCuboBridge */,
+				50D026521B695D8200895093 /* AiCuboBridgeTests */,
+				50D0265D1B695D8200895093 /* AiCuboBridgeUITests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		50D0263F1B695D8200895093 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50D0264A1B695D8200895093 /* Assets.xcassets in Resources */,
+				50D0264D1B695D8200895093 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50D026511B695D8200895093 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50D0265C1B695D8200895093 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		50C43C421B679E6500AD2FAC /* Sources */ = {
@@ -236,14 +439,67 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50D026831B69653300895093 /* RMOShapes.c in Sources */,
 				509BC1801B68A389007172B6 /* LinkedList.cpp in Sources */,
 				509BC18F1B68D574007172B6 /* LinkedDictionary.cpp in Sources */,
 				50C43C5F1B679E9200AD2FAC /* main.cpp in Sources */,
+				50D026821B69653300895093 /* Values.cpp in Sources */,
+				50D026751B69633800895093 /* OpenGLView.cpp in Sources */,
 				5051D50B1B69497C00EEB446 /* NotificationCenter.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		50D0263D1B695D8200895093 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50D026481B695D8200895093 /* Shaders.metal in Sources */,
+				50D026461B695D8200895093 /* GameViewController.swift in Sources */,
+				50D026721B695E7400895093 /* CBridge.c in Sources */,
+				50D026441B695D8200895093 /* AppDelegate.swift in Sources */,
+				50D026761B69633800895093 /* OpenGLView.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50D0264F1B695D8200895093 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50D0265A1B695D8200895093 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		50D026551B695D8200895093 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50D026401B695D8200895093 /* AiCuboBridge */;
+			targetProxy = 50D026541B695D8200895093 /* PBXContainerItemProxy */;
+		};
+		50D026601B695D8200895093 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50D026401B695D8200895093 /* AiCuboBridge */;
+			targetProxy = 50D0265F1B695D8200895093 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		50D0264B1B695D8200895093 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50D0264C1B695D8200895093 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		50C43C531B679E6500AD2FAC /* Debug */ = {
@@ -357,6 +613,89 @@
 			};
 			name = Release;
 		};
+		50D026651B695D8200895093 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = AiCuboBridge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.maxbilbow-cpp.AiCuboBridge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AiCuboBridge/AiCuboBridge-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		50D026661B695D8200895093 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = AiCuboBridge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.maxbilbow-cpp.AiCuboBridge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AiCuboBridge/AiCuboBridge-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		50D026671B695D8200895093 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = AiCuboBridgeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.maxbilbow-cpp.AiCuboBridgeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AiCuboBridge.app/Contents/MacOS/AiCuboBridge";
+			};
+			name = Debug;
+		};
+		50D026681B695D8200895093 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = AiCuboBridgeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.maxbilbow-cpp.AiCuboBridgeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AiCuboBridge.app/Contents/MacOS/AiCuboBridge";
+			};
+			name = Release;
+		};
+		50D026691B695D8200895093 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = AiCuboBridgeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.maxbilbow-cpp.AiCuboBridgeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = AiCuboBridge;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		50D0266A1B695D8200895093 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = AiCuboBridgeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.maxbilbow-cpp.AiCuboBridgeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = AiCuboBridge;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -386,6 +725,30 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		50D0266B1B695D8200895093 /* Build configuration list for PBXNativeTarget "AiCuboBridge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50D026651B695D8200895093 /* Debug */,
+				50D026661B695D8200895093 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		50D0266C1B695D8200895093 /* Build configuration list for PBXNativeTarget "AiCuboBridgeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50D026671B695D8200895093 /* Debug */,
+				50D026681B695D8200895093 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		50D0266D1B695D8200895093 /* Build configuration list for PBXNativeTarget "AiCuboBridgeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50D026691B695D8200895093 /* Debug */,
+				50D0266A1B695D8200895093 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
