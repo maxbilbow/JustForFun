@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>ACF18FC3-9B0D-49BC-A5D4-6BC94CEAE984</string>
+	<key>IDESourceControlProjectName</key>
+	<string>JustForFun</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>EAABAD17593E1C8E9C77976546A8CC808143B7EA</key>
+		<string>https://github.com/maxbilbow/JustForFun.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ShakespeareLogic/JustForFun.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>EAABAD17593E1C8E9C77976546A8CC808143B7EA</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/maxbilbow/JustForFun.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>EAABAD17593E1C8E9C77976546A8CC808143B7EA</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>EAABAD17593E1C8E9C77976546A8CC808143B7EA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>JustForFun</string>
+		</dict>
+	</array>
+</dict>
+</plist>

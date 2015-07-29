@@ -93,6 +93,7 @@ public:
     
     Node * getNode(int index);
    	
+    bool contains(Value value);
     
    	///Returns previous value or throws error if out of range
    	Value setValue(int index);
