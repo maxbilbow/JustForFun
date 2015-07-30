@@ -6,36 +6,51 @@
 //  Copyright © 2015 Rattle Media Ltd. All rights reserved.
 //
 
-#ifndef Interfaces_h
-#define Interfaces_h
+#ifndef EventListener_h
+#define EventListener_h
 
 
-#endif /* Interfaces_h */
-//#import <iostream>
+#endif /* EventListener */
+#import <iostream>
+#import "Object.hpp"
+//#import "NotificationCenter.hpp"
 
-typedef void * Object;
-typedef std::string AnEvent;
 
-
-class EventListener {
-public:
-    EventListener();
-//    virtual void OnEvent(String theEvent, Object args){}
-    virtual void OnEventDidStart(AnEvent theEvent, Object args) {
-        std::cout << "   Event Started: " << theEvent << ", with args: " << args << std::endl;
-    }
+namespace rmx {
     
-    virtual void OnEventDidEnd(AnEvent theEvent, Object args) {
-        std::cout << "     Event Ended: " << theEvent << ", with args: " << args << std::endl;
-    }
-    virtual void SendMessage(AnEvent message){
-        std::cout << "Message Received: " << message << std::endl;
-    }
-};
+    class EventListener : public Object {
+//    protected:
+        void init(bool add = true);
+    public:
+        typedef std::string AnEvent;
+        typedef void * EventArgs;
+        EventListener(std::string name = "", bool add = true):Object(name) {
+            this->init(add);
+        }
+        //    virtual void OnEvent(String theEvent, EventArgs args){}
+        virtual void OnEventDidStart(AnEvent theEvent, EventArgs args) {
+            std::cout << *this << "\n       Event Started: " << theEvent << ", with args: " << args << std::endl << std::endl;
+        }
+        
+        virtual void OnEventDidEnd(AnEvent theEvent, EventArgs args) {
+            std::cout << *this << "\n         Event Ended: " << theEvent << ", with args: " << args << std::endl << std::endl;
+        }
+        virtual void SendMessage(AnEvent message){
+            std::cout << *this << "\n    Message Received: " << message << std::endl << std::endl;
+        }
+        
+        EventListener * clone() override;
+//        {
+//            EventListener * clone =  (EventListener*) Object::clone();
+//            if (NotificationCenter::hasListener(this)) {
+//                NotificationCenter::addListener(clone);
+//            }
+//        }
+    };
+
+}
 
 
-//typedef _EventListener * EventListener;
 
-
-
+void RMXEventListenerTest();
 

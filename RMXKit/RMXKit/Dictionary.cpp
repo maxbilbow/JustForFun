@@ -7,25 +7,22 @@
 //
 
 
-#import <iostream>
-#import "LinkedList.hpp"
-#import "LinkedDictionary.hpp"
+
+//#import <iostream>
+//
+//
+//#import "LinkedList.hpp"
+#import "Dictionary.hpp"
+#import "Object.hpp"
 using namespace std;
+using namespace rmx;
 
-class Thing {
-public:
-    std::string name = "I am a Thing!";
-    std::string toString() {
-        return this->name;
-    }
-};
 
-//template <class T:Thing>
-std::ostream& operator<<(std::ostream &strm,  Thing &a) {
-    return strm << "A(" << a.toString() << ")";
-}
 
-void DictionaryTest() {
+typedef Object Thing;
+
+//using namespace rmx;
+void RMXDictionaryTest() {
     // insert code here...
     std::cout << "\nDICTIONARY START>>>>\n\n";
         //Lets start by adding a "Thing" to a linked list
@@ -41,33 +38,33 @@ void DictionaryTest() {
     dict->setValueForKey("THING2", new Thing());
 //    things->getValue(0)->name = "World!";
     cout << endl;
-    cout << "  Printing thing 2: " << dict->getValueForKey("THING2")->toString() << endl;
-    cout << "  Printing thing 1: " << dict->getValueForKey("THING")->toString() << endl;
+    cout << "  Printing thing 2: " << dict->getValueForKey("THING2")->ToString() << endl;
+    cout << "  Printing thing 1: " << dict->getValueForKey("THING")->ToString() << endl;
     
-    things->first()->name = "World!";
-    dict->getValueForKey("THING2")->name = "Hello!";
+    things->first()->setName("World!");
+    dict->getValueForKey("THING2")->setName("Hello!");
     //Check the name change in the list.
-    cout << "Thing 1 is now: " << *things->first() << endl;
+    cout << "Thing 1 is now: " << things->first() << endl;
     
     //Check the name was changed in the dictionary also.
     cout << endl;
-    cout << "  Printing thing 2: " << dict->getValueForKey("THING2")->toString() << endl;
-    cout << "  Printing thing 1: " << dict->getValueForKey("THING")->toString() << endl;
+    cout << "  Printing thing 2: " << dict->getValueForKey("THING2")->ToString() << endl;
+    cout << "  Printing thing 1: " << dict->getValueForKey("THING")->ToString() << endl;
     
     //Create a new thing
     Thing * aThing = new Thing();
-    aThing->name = "Monty";
+    aThing->setName("Monty");
     
     //Replace the thing at key "THING"
     Thing* oldThing = dict->setValueForKey("THING", aThing);
     
     //Do we still have the old Thing? I.e. was it actually replaced?
     cout << endl;
-    cout << "  We Repleced (and removed) thing 1: " << oldThing->name << endl;
+    cout << "  We Repleced (and removed) thing 1: " << oldThing << endl;
     
     //What remains in out dictionary?
-    cout << "                   Printing thing 2: " << dict->getValueForKey("THING2")->toString() << endl;
-    cout << "               Printing new thing 1: " << dict->getValueForKey("THING")->toString() << endl;
+    cout << "                   Printing thing 2: " << dict->getValueForKey("THING2") << endl;
+    cout << "               Printing new thing 1: " << dict->getValueForKey("THING") << endl;
     
     
 }

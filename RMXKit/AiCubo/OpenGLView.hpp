@@ -12,3 +12,14 @@
 #include <stdio.h>
 
 #endif /* OpenGLView_hpp */
+
+namespace RMX {
+    class OpenGLView {
+    public:
+        static int Run(int argc, char * argv[]);
+
+        static void reshape (int width, int height) ;
+        static void display (void);
+        
+    };
+}

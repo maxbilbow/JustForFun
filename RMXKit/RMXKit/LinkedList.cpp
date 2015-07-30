@@ -7,50 +7,19 @@
 //
 //#include "Interfaces.hpp"
 
-#include <iostream>
+//#include <iostream>
+
+
 #include "LinkedList.hpp"
 
 using namespace std;
 
-//void printList(LinkedList<int> * list);
-
-
-
-//template <typename Value> void LinkedList<Value>::print(void) {
-//    try {
-//        if (this->isEmpty()) {
-//            std::cout << "Empty" << std::endl;
-//        } else {
-//            try {
-//                std::cout << this->_count << " items: " << this->_head;
-//            } catch (std::exception e) {
-//                std::cout << ", " << e.what();
-//            }
-//            LinkedList<Value>::Node * current = this->firstNode();
-//            while (current->next != NULL) {
-//                try {
-//                    std::cout << ", " << current->next->value;
-//                    current = current->next;
-//                } catch (std::exception e) {
-//                    std::cout << ", " << e.what();
-//                }
-//            }
-//            std::cout << std::endl;
-//        }
-//    } catch (std::exception e) {
-//        
-//        std::cout << e.what() << std::endl;;
-//    }
-//    
-//};
-
-
 
 int TestVals[] = {0,1,2,3,4,5,6};//,5,6,7};
 
-template <typename Value> LinkedList<Value> * MakeList() {
-    LinkedList<int> * list = new LinkedList<int>();
-    int length = sizeof(TestVals) / sizeof(Value);
+rmx::LinkedList<int> * MakeList() {
+    rmx::LinkedList<int> * list = new rmx::LinkedList<int>();
+    int length = sizeof(TestVals) / sizeof(int);
 
     for (int i = 0; i < length; ++i) {
         list->append(&TestVals[i]);
@@ -59,10 +28,12 @@ template <typename Value> LinkedList<Value> * MakeList() {
 }
 
 
-void TestRemoveAt(LinkedList<int> * list, int index) {
+void TestRemoveAt(rmx::LinkedList<int> * list, int index) {
     try {
-        LinkedList<int>::Node * node = (LinkedList<int>::Node*) list->removeNodeAtIndex(index);
+        rmx::LinkedList<int>::Node * node = (rmx::LinkedList<int>::Node*) list->removeNodeAtIndex(index);
+        #if DEBUG
         cout << "Removed value at " << index <<  " (value: " << node->value << ")" << endl;
+#endif
         list->print();
     } catch (invalid_argument e) {
         cout << e.what() << endl;
@@ -70,7 +41,7 @@ void TestRemoveAt(LinkedList<int> * list, int index) {
 
 }
 
-void TestArray(LinkedList<int> * list) {
+void TestArray(rmx::LinkedList<int> * list) {
     
     
     for (int i = 0; i < list->count(); ++i) {
@@ -91,7 +62,7 @@ void TestArray(LinkedList<int> * list) {
     list->print();
 }
 
-void TestRemove(LinkedList<int> * list) {
+void TestRemove(rmx::LinkedList<int> * list) {
     TestRemoveAt(list,list->count() - 1); //last
     TestRemoveAt(list,3); //middle
     TestRemoveAt(list,0); //first
@@ -108,16 +79,18 @@ void TestRemove(LinkedList<int> * list) {
     
     int vals[] = {0,1,2,3,4,5,6};//,5,6,7};
     list->append(vals, sizeof(TestVals));
+#if DEBUG
     cout << "Removing first value: " << list->removeValueAtIndex(0) << endl;
     cout << "First: " << list->first() << ", Last: " << list->last() << endl;
+#endif
     list->print();
     list->removeAll();
     list->print();
 
 }
 
-
-void LinkedListTest(void) {
+using namespace rmx;
+void RMXLinkedListTest(void) {
    
    LinkedList<int> * list = new LinkedList<int>();
     list->append(TestVals, sizeof(TestVals));

@@ -10,10 +10,10 @@
 #include <CoreFoundation/CoreFoundation.h>
 
 #pragma GCC visibility push(hidden)
-
 class CRMXKit {
-	public:
-		CFStringRef UUID(void);
+    public:
+        CFStringRef UUID(void);
 };
 
 #pragma GCC visibility pop
+

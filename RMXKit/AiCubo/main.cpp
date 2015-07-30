@@ -9,21 +9,30 @@
 #import <iostream>
 
 
-#import "EventListener.hpp"
-#import "LinkedList.hpp"
-#import "LinkedDictionary.hpp"
-#import "NotificationCenter.hpp"
-#import "OpenGLView.hpp"
+#import "RMXKit.h"
+
+//#import "LinkedList.hpp"
+//#import "Dictionary.hpp"
+//#import "ASingleton.hpp"
+//#import "Object.hpp"
+
+
+#define quote(x) #x
+
+//#import "OpenGLView.hpp"
 
 using namespace std;
+using namespace rmx;
 
 
-int main(int argc, const char * argv[]) {
-//    LinkedListTest();
-    
-    DictionaryTest();
-    
-    
-//    NotificationCenter::Test();
+
+
+
+
+int main(int argc, char * argv[]) {
+    RMXLinkedListTest();
+    RMXDictionaryTest();
+    RMXObjectCloneTest();
+    RMXEventListenerTest();
     return 0;
 }

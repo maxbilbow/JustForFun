@@ -8,15 +8,20 @@
 
 
 #import <iostream>
-#import "EventListener.hpp"
-#import "LinkedList.hpp"
-#import "LinkedDictionary.hpp"
+//#import "EventListener.hpp"
+//#import "LinkedList.hpp"
+//#import "Dictionary.hpp"
 #import "NotificationCenter.hpp"
 
 
-EventListener::EventListener() {
-    NotificationCenter::addListener(this);
-}
+using namespace rmx;
+
+typedef NotificationCenter::EventArgs EventArgs;
+typedef NotificationCenter::EventType EventType;
+typedef NotificationCenter::EventStatus EventStatus;
+
+
+
 
 using namespace std;
 
@@ -48,6 +53,9 @@ void NotificationCenter::reset(EventType theEvent) {
 void NotificationCenter::addListener(EventListener * listener) {
     if (!current()->listeners->contains (listener)) {
         current()->listeners->append(listener);
+//        cout << "\nAdded to Listeners: " << *listener << endl;
+    } else {
+        cout << "\n !! Not Adding => Listeners already contain: " << *listener << endl;
     }
 }
 
@@ -74,7 +82,7 @@ bool NotificationCenter::isIdle(EventType theEvent) {
 }
 
 
-void NotificationCenter::eventDidOccur(EventType theEvent, Object o) {
+void NotificationCenter::eventDidOccur(EventType theEvent, EventArgs o) {
     eventWillStart(theEvent,o);
     eventDidEnd(theEvent,o);
 }
@@ -89,7 +97,7 @@ bool NotificationCenter::didFail(EventType theEvent) {
 }
 
 
-void NotificationCenter::eventWillStart(EventType theEvent, Object o) {
+void NotificationCenter::eventWillStart(EventType theEvent, EventArgs o) {
     LinkedList<EventListener>::Node * node = current()->listeners->firstNode();
     if (node->value == nullptr)
         return;
@@ -101,13 +109,13 @@ void NotificationCenter::eventWillStart(EventType theEvent, Object o) {
     }
 }
 
-void NotificationCenter::eventDidEnd(EventType theEvent, Object o) {
+void NotificationCenter::eventDidEnd(EventType theEvent, EventArgs o) {
     LinkedList<EventListener>::Node * node = current()->listeners->firstNode();
     if (node->value == nullptr)
         return;
     else {
         while (node != nullptr) {
-            node->value->OnEventDidEnd(theEvent,o);
+            node->value->OnEventDidEnd(theEvent, o);
             node = node->next;
         }
     }

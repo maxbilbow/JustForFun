@@ -22,65 +22,69 @@
 #define EVENT_STATUS_COMPLETE   2ui
 #define EVENT_STATUS_FAILURE    3ui
 
-//const String E_IDLE = "Idle";
 
+#import "LinkedList.hpp"
+#import "Dictionary.hpp"
+#import "EventListener.hpp"
+namespace rmx {
+    
+    class NotificationCenter {
+    public:
+        typedef void * EventArgs;
+        typedef std::string EventType;
+        typedef unsigned short EventStatus;
+    private:
+        LinkedList<EventListener> * listeners;
+        
+        Dictionary<EventType, EventStatus> * events;
 
-typedef std::string EventType;
-typedef unsigned short EventStatus;
-//#import "LinkedList.hpp"
-//#import "LinkedDictionary.hpp"
-class NotificationCenter {
+        NotificationCenter();
 
-private:
-    LinkedList<EventListener> * listeners;
-    
-    Dictionary<EventType, EventStatus> * events;
+    public:
+        
+        static NotificationCenter * current();
+        
+        static bool hasListener(EventListener * listener);
+        
+        static void reset(EventType theEvent);
+        
+        static void addListener(EventListener * listener);
+        
+        static EventListener * removeListener(EventListener * listener);
+        
+        static EventStatus statusOf(EventType theEvent);
+        
+        static bool isIdle(EventType theEvent);
+        
+        static bool isActive(EventType theEvent) ;
+        
+        static void eventDidOccur(EventType e) {
+            eventDidOccur (e, nullptr);
+        }
+        
+        static void eventDidOccur(EventType theEvent, EventArgs o);
+        
+        static bool isComplete(EventType theEvent);
+        
+        static bool didFail(EventType theEvent);
+        
+        static void eventWillStart(EventType theEvent) {
+            eventWillStart (theEvent, nullptr);
+        }
+        
+        static void eventWillStart(EventType theEvent, EventArgs o);
 
-    NotificationCenter();
+        
+        static void eventDidEnd(EventType theEvent) {
+            eventDidEnd (theEvent, nullptr);
+        }
+        
+        static void eventDidEnd(EventType theEvent, EventArgs o);
+        
+        static void notifyListeners(std::string message);
+        
+        static void Test();
+        
+    };
+}
 
-public:
-    
-    static NotificationCenter * current();
-    
-    static bool hasListener(EventListener * listener);
-    
-    static void reset(EventType theEvent);
-    
-    static void addListener(EventListener * listener);
-    
-    static EventListener * removeListener(EventListener * listener);
-    
-    static EventStatus statusOf(EventType theEvent);
-    
-    static bool isIdle(EventType theEvent);
-    
-    static bool isActive(EventType theEvent) ;
-    
-    static void eventDidOccur(EventType e) {
-        eventDidOccur (e, nullptr);
-    }
-    
-    static void eventDidOccur(EventType theEvent, Object o);
-    
-    static bool isComplete(EventType theEvent);
-    
-    static bool didFail(EventType theEvent);
-    
-    static void eventWillStart(EventType theEvent) {
-        eventWillStart (theEvent, nullptr);
-    }
-    
-    static void eventWillStart(EventType theEvent, Object o);
-
-    
-    static void eventDidEnd(EventType theEvent) {
-        eventDidEnd (theEvent, nullptr);
-    }
-    
-    static void eventDidEnd(EventType theEvent, Object o);
-    
-    static void notifyListeners(std::string message);
-    
-    static void Test();
-    
-};

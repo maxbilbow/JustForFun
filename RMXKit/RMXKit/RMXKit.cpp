@@ -10,6 +10,7 @@
 #include "RMXKit.h"
 #include "RMXKitPriv.hpp"
 
+//using namespace rmx;
 CFStringRef RMXKitUUID(void)
 {
 	CRMXKit* theObj = new CRMXKit;

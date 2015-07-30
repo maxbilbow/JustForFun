@@ -6,9 +6,9 @@
  *  Copyright © 2015 Rattle Media Ltd. All rights reserved.
  *
  */
-
 extern "C" {
 #include <CoreFoundation/CoreFoundation.h>
+
 
 #pragma GCC visibility push(default)
 
@@ -18,3 +18,12 @@ CFStringRef RMXKitUUID(void);
 
 #pragma GCC visibility pop
 }
+
+
+#import "LinkedList.hpp"
+#import "Dictionary.hpp"
+#import "NotificationCenter.hpp"
+#import "Object.hpp"
+#import "ASingleton.hpp"
+
+
