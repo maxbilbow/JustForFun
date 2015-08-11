@@ -1,0 +1,21 @@
+package rmx;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class MainPanel extends JPanel {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	public static void test() {
+		JFrame view = new JFrame();
+		view.add(new MainPanel());
+		view.setVisible(true);
+		view.pack();
+		view.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);		
+	}
+
+}

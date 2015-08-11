@@ -1,0 +1,27 @@
+package rmx;
+
+public class StringFormatter {
+	private String originalText;
+	private String formattedText;
+	
+	public String getOriginalText() {
+		return originalText;
+	}
+
+	public void newTextInput(String newText) {
+		this.originalText = newText;
+		this.setFormattedText(newText);
+	}
+
+	public String getFormattedText() {
+		return formattedText;
+	}
+
+	protected void setFormattedText(String formattedText) {
+		this.formattedText = formattedText;
+	}
+	
+	public String splitWordsWith(String spacer) {
+		
+	}
+}

@@ -1,0 +1,15 @@
+package rmx;
+
+import javax.swing.JFrame;
+
+public class Main {
+	
+	
+	public static void main(String [] args) {
+		StringFormatter.testReverse();
+		JFrame view = new JFrame();
+		view.setVisible(true);
+		view.pack();
+		view.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+}

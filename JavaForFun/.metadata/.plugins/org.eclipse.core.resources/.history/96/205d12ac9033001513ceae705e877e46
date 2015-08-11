@@ -1,9 +1,0 @@
-package rmx;
-
-public interface EventListener {
-	void OnEvent(IEvent theEvent, object args);
-	void OnEventDidStart(IEvent theEvent, object args);
-	void OnEventDidEnd(IEvent theEvent, object args);
-	void SendMessage(string message, SendMessageOptions sendMessageOptions);
-	string name { get; }
-}
