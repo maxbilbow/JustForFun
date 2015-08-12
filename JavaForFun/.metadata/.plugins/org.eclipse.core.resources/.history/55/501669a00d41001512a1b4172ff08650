@@ -1,0 +1,9 @@
+package rmx;
+
+import java.util.HashMap;
+import java.util.LinkedList;
+
+public interface HashMap<String, LinkedList<KeyValueObserver>>  {
+	void OnValueForKeyWillChange(String key, Object value, RMXObject sender);
+	void OnValueForKeyDidChange(String key, Object value, RMXObject sender);
+}

@@ -1,0 +1,25 @@
+package rmx;
+import java.sql.SQLException;
+
+import eAgent.Database;
+public class Main {
+	
+	
+	public static void main(String [] args) {
+		StringFormatter sf = StringFormatter.testReverse();
+		MainPanel view = MainPanel.test();
+		try {
+			Database db = new Database("justforfun");
+			System.out.println(db.getDBName());
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			System.out.println(e);
+			e.printStackTrace();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			System.out.println(e);
+			e.printStackTrace();
+		}
+		System.out.println("Did all that...");
+	}
+}

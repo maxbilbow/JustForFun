@@ -1,0 +1,1 @@
+mysql -u maxinnit -p -h devsql.maxbilbow.com justforfun 

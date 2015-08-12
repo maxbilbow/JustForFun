@@ -1,0 +1,22 @@
+
+
+
+import rmx.RMXObject;
+import rmx.StringFormatter;
+
+public class main {
+
+	public static void main(String[] args) {
+//		NotificationCenter.init();
+		RMXObject o = new RMXObject();
+		o.OnEventDidEnd("Im and event", null);
+		System.out.println("Hello, world");
+//		o.StartListening();
+//		NotificationCenter.eventDidOccur("Hello! Im an event!", null);
+		StringFormatter sf = StringFormatter.testReverse();
+//		MainPanel view = MainPanel.test();
+		
+		System.out.println(sf + "\nDid all that...");
+	}
+
+}

@@ -1,0 +1,35 @@
+import java.sql.SQLException;
+
+import eAgent.Database;
+import rmx.MainPanel;
+import rmx.RMXObject;
+import rmx.StringFormatter;
+
+public class main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//		NotificationCenter.init();
+		RMXObject o = new RMXObject();
+		o.OnEventDidEnd("Im and event", null);
+		System.out.println("Hello, world");
+//		o.StartListening();
+//		NotificationCenter.eventDidOccur("Hello! Im an event!", null);
+		StringFormatter sf = StringFormatter.testReverse();
+		MainPanel view = MainPanel.test();
+		try {
+			Database db = new Database("justforfun");
+			System.out.println(db.getDBName());
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			System.out.println(e);
+			e.printStackTrace();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			System.out.println(e);
+			e.printStackTrace();
+		}
+		System.out.println("Did all that...");
+	}
+
+}
