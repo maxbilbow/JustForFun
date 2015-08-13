@@ -12,4 +12,9 @@
 <fullyQualifiedTypeName name="eAgent.Database"/>
 <fullyQualifiedTypeName name="rmx.NotificationCenter"/>
 <fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="java.sql.Connection"/>
+<fullyQualifiedTypeName name="java.util.Properties"/>
+<fullyQualifiedTypeName name="java.sql.DriverManager"/>
+<fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+<fullyQualifiedTypeName name="rmx.db.Database"/>
 </qualifiedTypeNameHistroy>
