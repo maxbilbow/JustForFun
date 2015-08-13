@@ -1,0 +1,13 @@
+package challenges;
+
+public class Alpha extends lesson.Solution{
+	public int solution(int[] A) {
+	        // write your code in Java SE 8
+		return A;
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

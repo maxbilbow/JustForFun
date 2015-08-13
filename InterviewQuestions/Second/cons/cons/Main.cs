@@ -8,15 +8,15 @@ namespace cons
 	{
 		public static void Main (string[] args)
 		{
-//			Console.WriteLine("Soln: " + new TapeEquilibrium().solution(new int[] {
-//				2,3,1,5
-//			}));
+			Console.WriteLine("Soln: " + new TapeEquilibrium().solution(new int[] {
+				2,3,1,5
+			}));
 
-//			Console.WriteLine("Soln: " + new PermMissingElem().solution(new int[] {
-//				2,3,1,5
-//			}));
+			Console.WriteLine("Soln: " + new PermMissingElem().solution(new int[] {
+				2,3,1,5
+			}));
 
-//			Console.WriteLine("Soln: " + new FrogJump().solution(10,85,30));
+			Console.WriteLine("Soln: " + new FrogJump().solution(10,85,30));
 //			Console.WriteLine("Task1: " + new Task1().solution("a0Ba7Haaa"));
 //			Console.WriteLine("Task1: " + new Task1().solution("a0bb"));
 			Console.WriteLine("Task2: " + new Task2().solution(2014, "April", "May", "Wednesday"));
@@ -30,7 +30,6 @@ class Task2 {
 
 
 	class Month {
-		public static int Year;
 		public static string firstOfJan = "Monday";
 		static int getOffset() {
 			for (int i = 0; i<7; ++i) {
@@ -39,10 +38,10 @@ class Task2 {
 			}
 			throw new System.Exception("Day was invalid");
 		}
-		public static bool isLeapYear {
-			get {
-				return Year % 4 == 0;
-			}
+		bool IsLeapYear;
+
+		public static bool isLeapYear(int Year) {
+			return (Year) % 4 == 0;
 		}
 		public static Dictionary<string, int> months = new Dictionary<string, int>() {
 			{"jan", 31},
@@ -68,7 +67,8 @@ class Task2 {
 				return (int) (Days - Offset) % 7;
 			}
 		}
-		public Month(string name, int offset = 0) {
+		public Month(string name, bool leapYear, int offset = 0) {
+			this.IsLeapYear = leapYear;
 			this.Name = name;
 			if (Name == "jan")
 				Offset = getOffset();
@@ -91,7 +91,7 @@ class Task2 {
 				if (days < 28) {
 					string mon = this.name.Substring (0, 3).ToLower ();
 					this.days = months [mon];
-					if (this.days == 28 && isLeapYear)
+					if (this.name == "feb" && IsLeapYear)
 						this.days = 29;
 				}
 				return days;
@@ -100,7 +100,7 @@ class Task2 {
 
 		public int wholeWeeks {
 			get {
-				return (int) Math.Floor((double) Days - Offset / 7);
+				return (int) Math.Floor(((double) Days - Offset )/ 7);
 			}
 		}
 	}
@@ -109,14 +109,15 @@ class Task2 {
 
 
 	public int solution(int Y, string A, string B, string W) {
-		Month.Year = Y;
+		bool leap = Month.isLeapYear (Y);
 		Month.firstOfJan = W;
+		Console.WriteLine (Y+ " isLeapYear: " + leap);
 
 		foreach (KeyValuePair<string, int> month in Month.months) {
 			if (Months.Count == 0)
-				Months.AddLast(new Month(month.Key));
+				Months.AddLast(new Month(month.Key, leap));
            	else {
-				var nextMonth = new Month(month.Key, Months.Last.Value.TrailingDays);
+				var nextMonth = new Month(month.Key, leap, Months.Last.Value.TrailingDays);
 				Months.AddLast(nextMonth);
 			}
 		}

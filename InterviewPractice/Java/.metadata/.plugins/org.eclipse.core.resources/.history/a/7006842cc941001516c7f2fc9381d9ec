@@ -1,0 +1,15 @@
+package frog1;
+
+public class Solution {
+    public int solution(int X, int[] A) {
+		return X;
+        // write your code in Java SE 8
+    }
+    
+    public void test(){
+    	int[] A = {
+    		1	
+    	};
+    	System.out.println("Soln: " + solution(5, A));
+    }
+}

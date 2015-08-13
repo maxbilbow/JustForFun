@@ -1,0 +1,42 @@
+/**
+ * 
+ */
+package lesson;
+
+import java.util.Random;
+
+/**
+ * @author rattle
+ *
+ */
+public abstract class Solution {
+	String log = "";
+	
+	protected void log(String log);
+	public static void shuffleArray(int[] ar)
+	  {
+	    Random rnd = new Random();
+	    for (int i = ar.length - 1; i > 0; i--)
+	    {
+	      int index = rnd.nextInt(i + 1);
+	      // Simple swap
+	      int a = ar[index];
+	      ar[index] = ar[i];
+	      ar[i] = a;
+	    }
+	  }
+	
+	public static String ToString(int [] D) {
+		String s = "[ " + D[0];
+		for (int i = 1; i < D.length; ++i)
+			s += ", " + D[i];
+		s += " ]";
+		return s;
+		
+	}
+	
+	public String toString() {
+		return this.log.isEmpty() ? "No Logs" : "-----------" + this.log;
+	}
+//	public abstract void main(String[] args);
+}

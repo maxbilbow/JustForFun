@@ -1,13 +1,13 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="main.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="cons/cons/Main.cs">
     <Files>
-      <File FileName="main.cs" Line="7" Column="1" />
+      <File FileName="cons/cons/Main.cs" Line="39" Column="13" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
-          <Node name="Second" expanded="True" selected="True" />
+          <Node name="Second" expanded="True" />
         </State>
       </Pad>
     </Pads>

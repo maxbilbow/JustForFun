@@ -1,0 +1,8 @@
+package frog1;
+
+public class Solution {
+    public int solution(int X, int[] A) {
+		return X;
+        // write your code in Java SE 8
+    }
+}

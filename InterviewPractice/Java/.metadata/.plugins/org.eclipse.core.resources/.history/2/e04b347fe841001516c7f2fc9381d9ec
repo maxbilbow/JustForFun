@@ -1,0 +1,13 @@
+/**
+ * 
+ */
+package lesson;
+
+/**
+ * @author rattle
+ *
+ */
+public abstract class Solution {
+	
+//	public abstract void main(String[] args);
+}

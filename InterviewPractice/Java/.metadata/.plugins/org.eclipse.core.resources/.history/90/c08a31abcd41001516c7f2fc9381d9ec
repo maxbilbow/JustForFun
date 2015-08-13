@@ -1,0 +1,26 @@
+package lesson.one;
+
+public class PermTest {
+	public static final int IS_PERM = 1;
+	public static final int MISSING_VALUE = 0;
+	public static final int REPEATED_VALUE = 0;
+	
+	  public int solution(int[] A) {
+	        // write your code in Java SE 8
+		  
+		  return -1;
+	  }
+
+	  public static void main(String[] args) {
+		  PermTest s = new PermTest();
+		  int[] A = {
+				  4, 1, 3, 2
+		    	};
+		  
+		  int[] B = {
+				  4, 1, 3
+		    	};
+		  System.out.println("Soln: " + s.solution(A));
+		  System.out.println("Soln: " + s.solution(B));
+	  }
+}

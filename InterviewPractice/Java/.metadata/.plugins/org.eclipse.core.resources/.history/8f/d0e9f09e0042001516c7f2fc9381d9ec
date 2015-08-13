@@ -1,0 +1,10 @@
+package challenges;
+
+public class Alpha extends lesson.Solution{
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
