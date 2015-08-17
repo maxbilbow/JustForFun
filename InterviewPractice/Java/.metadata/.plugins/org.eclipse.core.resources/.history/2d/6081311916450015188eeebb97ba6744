@@ -1,0 +1,69 @@
+package Interviews.imdb;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.Set;
+/**
+ * . Write code in a language of your choice to find the longest 
+ *   monotonically increasing contiguous subsequence in a sequence
+ *   of integers and reverse it. (750 character max)
+ * @author Max
+ *
+ */
+public class MonInConSubOfInts {
+	
+//	private int[] sequence;
+//	private LinkedList<Integer> micsoi = new LinkedList<Integer>();
+	 
+	
+	
+	LinkedList<Integer> list;
+	int longest = 0;
+	static <T> void print(LinkedList<T> o) {
+		Iterator i = o.iterator();
+		System.out.print("\n[ " + i.next());
+		while (i.hasNext())
+			System.out.print(", " + i.next());
+		System.out.print(" ]\n");
+	}
+	
+	static void print(Iterator i) {
+		System.out.print("\n[ " + i.next());
+		while (i.hasNext())
+			System.out.print(", " + i.next());
+		System.out.print(" ]\n");
+	}
+	
+	static void print(Object[] o) {
+		System.out.print("\n[ " + o[0]);
+		for (int i = 1;i<o.length;++i)
+			System.out.print(", " + o[i]);
+		System.out.print(" ]\n");
+	}
+	
+	public Object[] longestSequence(int[] sequence) {
+		list = new LinkedList<Integer>();
+		for (int i : sequence) 
+			list.addLast(i);
+		
+		System.out.println("\narrLen: "+sequence.length + ", list: " + list.size());//+ ", mapLen: " + llist.size() + "\n");
+		print(list);
+				
+		return list.toArray();
+	}
+	
+	LinkedList<Integer> getSub(int first) {
+		LinkedList<Integer> sub = new LinkedList();
+		
+		Iterator i = this.list.listIterator(first);
+		
+		return sub;
+	}
+	
+	public static void main(String[]args) {
+		int[] a = {0, 8, 4, 12, 2, 10, 6, 14, 1, 9, 5, 13, 3, 11, 7, 15};
+		Object[] b = new MonInConSubOfInts().longestSequence(a);
+		print(b);
+		
+	}
+}

@@ -1,0 +1,32 @@
+package Interviews.imdb;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.Set;
+/**
+ * . Write code in a language of your choice to find the longest 
+ *   monotonically increasing contiguous subsequence in a sequence
+ *   of integers and reverse it. (750 character max)
+ * @author Max
+ *
+ */
+public class MonInConSubOfInts {
+	
+//	private int[] sequence;
+//	private LinkedList<Integer> micsoi = new LinkedList<Integer>();
+	 
+	
+	public int[] longestSequence(int[] sequence) {
+		HashMap<Integer,Integer> map = new HashMap<Integer,Integer>(sequence.length);
+		for (int i : sequence)
+			map.put(i, i);
+		for (int i : map.values())
+			System.out.println(i);
+		return sequence;
+	}
+	
+	public static void main(String[]args) {
+		int[] a = {0, 8, 4, 12, 2, 10, 6, 14, 1, 9, 5, 13, 3, 11, 7, 15};
+		new MonInConSubOfInts().longestSequence(a);
+	}
+}

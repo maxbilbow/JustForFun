@@ -1,6 +1,7 @@
 package Interviews.imdb;
 
 public class Password extends lesson.Solution {
+	/*
 		//string pwd;
 		//string[] texts;
 		int result = 0;
@@ -40,5 +41,5 @@ public class Password extends lesson.Solution {
 			System.out.println("Task1: " + new Password().solution("a0bb"));
 		}
 	
-
+*/
 }

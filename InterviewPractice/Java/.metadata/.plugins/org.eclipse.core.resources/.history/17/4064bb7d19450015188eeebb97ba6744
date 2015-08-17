@@ -1,0 +1,94 @@
+package Interviews.imdb;
+
+import java.util.Iterator;
+import java.util.LinkedList;
+
+/**
+ * . Write code in a language of your choice to find the longest 
+ *   monotonically increasing contiguous subsequence in a sequence
+ *   of integers and reverse it. (750 character max)
+ * @author Max
+ *
+ */
+public class MonInConSubOfInts {
+	
+//	private int[] sequence;
+//	private LinkedList<Integer> micsoi = new LinkedList<Integer>();
+	 
+	
+	
+	LinkedList<Integer> list;
+	LinkedList<Integer> sub;
+	int maxLength = 0; int listSize;
+	static <T> void print(LinkedList<T> o) {
+		Iterator<T> i = o.iterator();
+		print(i);
+	}
+	
+	static <T>void print(Iterator<T> i) {
+		System.out.print("[ " + i.next());
+		while (i.hasNext())
+			System.out.print(", " + i.next());
+		System.out.print(" ]\n");
+	}
+	
+	static void print(Object[] o) {
+		System.out.print("[ " + o[0]);
+		for (int i = 1;i<o.length;++i)
+			System.out.print(", " + o[i]);
+		System.out.print(" ]\n");
+	}
+	
+	public int[] longestSequence(int[] sequence) {
+		list = new LinkedList<Integer>();
+		listSize = sequence.length;
+		for (int i : sequence) 
+			list.addLast(i);
+		
+		System.out.println("\narrLen: "+sequence.length + ", list: " + list.size());//+ ", mapLen: " + llist.size() + "\n");
+		print(list);
+
+		
+		sequence = new int[getSub(0)];
+		Iterator<Integer> rev = sub.descendingIterator();
+		int i = 0;
+		while (rev.hasNext())
+			sequence[i++] = rev.next();
+		return sequence;
+	}
+	
+	int getSub(int first) {
+		LinkedList<Integer> sub = new LinkedList<Integer>();
+		
+		Iterator<Integer> i = this.list.listIterator(first);
+		
+		sub.addLast(i.next());
+		while (i.hasNext()) {
+			int next = i.next();
+			if (next > sub.getLast())
+				sub.add(next);
+		}
+		
+		
+		int size = sub.size();
+		if (size > maxLength) {
+			
+			maxLength = size;
+			this.sub = sub;
+		}
+		System.out.print(first + ": ");
+		print(sub);
+		if (listSize - first > maxLength) {//Can we still find a longer sequence
+			return getSub(++first);	
+		} else
+			return  maxLength;
+	}
+	
+	public static void main(String[]args) {
+		int[] a = {3, 8,2,3, 4, 12, 2, 10, 6, 14, 1, 9, 5, 13, 3, 11, 7, 15};
+		int[] b = new MonInConSubOfInts().longestSequence(a);
+		System.out.print("Solution: ");
+		print(b);
+		
+	}
+}

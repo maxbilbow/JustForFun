@@ -74,7 +74,7 @@ public class WeeksInMonths extends lesson.Solution{
 
 	LinkedList<Month> Months = new LinkedList<Month>();
 
-
+/*
 	public int solution(int Y, String A, String B, String W) {
 		boolean leap = isLeapYear (Y);
 		Month.firstOfJan = W;
@@ -117,7 +117,7 @@ public class WeeksInMonths extends lesson.Solution{
 		
 		System.out.println("Task2: " + new WeeksInMonths().solution(2014, "April", "May", "Wednesday"));
 
-	}
+	}*/
 
 }
 

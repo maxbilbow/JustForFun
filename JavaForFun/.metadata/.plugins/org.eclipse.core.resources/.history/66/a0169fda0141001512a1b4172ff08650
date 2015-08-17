@@ -1,9 +1,0 @@
-package rmx;
-import java.sql.SQLException;
-
-import eAgent.Database;
-public class Main {
-	
-	
-
-}
