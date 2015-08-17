@@ -1,19 +1,11 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="cons/Main.cs">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../../../GameOfLife/GameOfLife-Unity/Assets/GameOfLife/Scripts/GameOfLife.cs">
     <Files>
-      <File FileName="cons/Main.cs" Line="20" Column="6" />
-      <File FileName="cons/AssemblyInfo.cs" Line="1" Column="1" />
+      <File FileName="../../../../GameOfLife/GameOfLife-Unity/Assets/Plugins/RMXUnity/AGameController.cs" Line="120" Column="2" />
+      <File FileName="../../../../GameOfLife/GameOfLife-Unity/Assets/GameOfLife/Scripts/GameOfLifeController.cs" Line="88" Column="5" />
+      <File FileName="../../../../GameOfLife/GameOfLife-Unity/Assets/GameOfLife/Scripts/GameOfLife.cs" Line="43" Column="10" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State expanded="True">
-          <Node name="cons" expanded="True">
-            <Node name="Main.cs" selected="True" />
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
