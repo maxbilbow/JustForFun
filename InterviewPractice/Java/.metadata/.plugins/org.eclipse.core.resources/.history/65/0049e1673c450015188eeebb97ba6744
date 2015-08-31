@@ -1,0 +1,6 @@
+package Interviews.acano;
+
+import java.util.Dictionary;
+public class ArrayDict<K,V> implements Map {
+	
+}

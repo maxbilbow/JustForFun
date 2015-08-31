@@ -1,0 +1,109 @@
+package Interviews.acano;
+import static Interviews.acano.S.*;
+
+import java.util.LinkedList;
+public class Solution {
+	
+	int[]get(int[]a){
+		return a;
+	}
+	
+	// Binary search (note boundaries in the caller)
+	// A[] is ceilIndex in the caller
+	int CeilIndex(int A[], int l, int r, int key) {
+	    int m;
+	    while( r - l > 1 ) {
+	        m = l + (r - l)/2;
+	        if (A[m] >= key)
+	        	r = m;
+	        else
+	        	l = m;
+	    }
+	    return r;
+	}
+
+	int[] LongestIncreasingSubsequenceLength(int arrayIn[]) {
+	    int max = arrayIn.length;
+	    int []arrayOut  = new int[max];
+	    int len; //length of longest sequence
+	    
+	    arrayOut[0] = arrayIn[0];
+	    len = 1;
+	    for( int i = 1; i < max; i++ ) {
+	        if( arrayIn[i] < arrayOut[0] )
+	            // new smallest value
+	            arrayOut[0] = arrayIn[i];
+	        else if( arrayIn[i] > arrayOut[len-1] )
+	            // A[i] wants to extend largest subsequence
+	            arrayOut[len++] = arrayIn[i];
+	        else
+	            // A[i] wants to be current end candidate of an existing subsequence
+	            // It will replace ceil value in tailTable
+	            arrayOut[CeilIndex(arrayOut, -1, len-1, arrayIn[i])] = arrayIn[i];
+	    }
+	    
+	    int[] result = new int[len];
+	    for (int i=0;i<result.length;++i) {
+	    	result[i] = arrayOut[--len];
+	    }
+	    return result;
+	}
+
+	 public static void main(String[]args) {
+	    int A[] = { 2, 5, 3, 7, 11, 8, 10, 13, 6 };
+	    
+	    
+
+	   
+int[] a = {3, 8,2,3, 4, 12, 2, 10, 6, 14, 1, 9, 5, 13, 3, 11, 7, 15};
+		
+		int[] b = {
+				4, 8,2,3, 4, 12, 2, 10, 6, 14, 1,
+				2, 10, 6, 14, 1,9, 5, 13, 3, 11, 7, 15,
+				8,2,3, 4, 12, 2, 10, 6, 14,
+				8,2,3, 4, 6, 14, 1,9, 5, 13, 
+				3, 11, 7, 15, 8,2,3, 4, 12, 2, 
+				10, 12, 2, 10, 6, 14, 11, 7, 15, 8,2,3, 4, 12, 2, 
+				10, 12, 2, 10, 6, 14,3, 8,2,3, 4, 12, 2, 10, 6, 14, 1,
+				2, 10, 6, 14, 1,9, 5, 13, 3, 11, 7, 15,
+				8,2,3, 4, 12, 2, 10, 6, 14,
+				8,2,3, 4, 6, 14, 1,9, 5, 13, 
+				3, 11, 7, 15, 1,2,3,4,5,6,7,8
+				};
+		
+		
+		int[] c = {
+				4, 8,2,3, 4, 12, 2, 10, 6, 14, 1,
+				2, 10, 6, 14, 1,9, 5, 13, 3, 11, 7, 15,
+				8,2,3, 4, 12, 2, 10, 6, 14,
+				8,2,3, 4, 6, 14, 1,9, 5, 13, 
+				3, 11, 7, 15, 8,2,3, 4, 12, 2, 
+				10, 12, 2, 10, 0, 14, 11, 7, 15, 8,2,3, 4, 12, 2, 
+				10, 12, 2, 10, 6, 14,3, 8,2,3, 4, 12, 2, 10, 6, 14, 1,
+				2, 10, 6, 14, 1,9, 5, 13, 3, 11, 7, 15,
+				8,2,3, 4, 12, 2, 10, 6, 14,
+				8,2,3, 4, 6, 14, 1,9, 5, 13, 
+				3, 11, 7, 15,2,3,4,5,6,7,8
+				};
+		Solution s = new Solution();
+	    System.out.println("A: "+
+	           ToString(s.LongestIncreasingSubsequenceLength(A)) +"\n");
+
+	    System.out.println("a: "+
+	           ToString(s.LongestIncreasingSubsequenceLength(a)) +"\n");
+
+	    System.out.println("B: "+
+	           ToString(s.LongestIncreasingSubsequenceLength(b)) +"\n");
+
+	    System.out.println("C: "+
+	           ToString(s.LongestIncreasingSubsequenceLength(c)) +"\n");
+//		System.out.print("Solution A: \n");
+//		print(s.get(a));
+//		System.out.println();
+//		System.out.print("Solution B: ");
+//		print(s.get(b));
+//		System.out.println();
+//		System.out.print("Solution C: ");
+//		print(s.get(c));
+	}
+}

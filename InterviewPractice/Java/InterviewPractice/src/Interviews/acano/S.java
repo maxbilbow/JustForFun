@@ -179,5 +179,20 @@ public class S {
 			System.out.print(", " + o[i]);
 		System.out.print(" ]\n");
 	}
+	static <T>void print(T[] o) {
+		System.out.print("[ " + o[0]);
+		for (int i = 1;i<o.length;++i)
+			System.out.print(", " + o[i]);
+		System.out.print(" ]\n");
+	}
+	
+	static String ToString(int[] o) {
+		String s = "[ " + o[0];
+		for (int i = 1;i<o.length;++i)
+			s += ", " + o[i];
+		s += " ]\n";
+		
+		return s;
+	}
 	
 }

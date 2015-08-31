@@ -1,0 +1,50 @@
+package Interviews.acano;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+
+/**
+ * Write code in a language of your choice which, 
+ * given two sorted arrays of integers, find the 
+ * pair of indices (one into each array) which 
+ * identify elements which sum to a given integer, 
+ * if any such pair exists. (750 character max)
+ * @author Max
+ *
+ */
+public class IntPairs {
+
+	class Pair {
+		int[] n;
+		Pair(int x, int y) {
+			this.n = new int[]{ x, y };
+		}
+		
+		int sum() {
+			return n[0] + n[1];
+		}
+		
+		@Override public String toString() {
+			return n[0] + " + " + n[1] + " = " + sum();
+		}
+	}
+	public Object[] solve(int[] array, int sum) {
+		HashMap<Integer, Integer> pairs = new HashMap<>();
+		ArrayList<Pair> result = new ArrayList<>();
+	    for(int i=0;i<array.length;i++){
+	        if(pairs.containsKey(array[i]))
+	        	result.add(new Pair(array[i],pairs.get(array[i])));
+	        else
+	            pairs.put(sum-array[i], array[i]);
+	    }
+	    return result.toArray();
+	}
+	
+	
+	public static void main(String[] args) {
+		int []a = {0,2,45,7,3,5, 10,1,8,9};
+	    Object[] o = new IntPairs().solve(a,10);  
+	    S.print(o);
+	}
+
+}

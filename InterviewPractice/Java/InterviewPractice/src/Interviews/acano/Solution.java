@@ -1,59 +1,55 @@
 package Interviews.acano;
 import static Interviews.acano.S.*;
+
+
 public class Solution {
 	
-	int[]get(int[]a){
-		return a;
-	}
-	
-	// Binary search (note boundaries in the caller)
-	// A[] is ceilIndex in the caller
-	int CeilIndex(int A[], int l, int r, int key) {
-	    int m;
-	    while( r - l > 1 ) {
-	        m = l + (r - l)/2;
-	        if (A[m] >= key)
-	        	r = m;
-	        else
-	        	l = m;
-	    }
-	    return r;
+	//binary search
+	private int getIndex(int seq[], int min, int max, int key) {
+		int m;
+		while( max - min > 1 ) {
+			m = min + (max - min)/2;
+			if (seq[m] >= key)
+				max = m;
+			else
+				min = m;
+		}
+		return max;
 	}
 
-	int LongestIncreasingSubsequenceLength(int A[]) {
-	    // Add boundary case, when array size is one
-	    int size = A.length;
-	    int []tailTable  = new int[size];
-	    int len; // always points empty slot
-	    
-	    tailTable[0] = A[0];
-	    len = 1;
-	    for( int i = 1; i < size; i++ ) {
-	        if( A[i] < tailTable[0] )
-	            // new smallest value
-	            tailTable[0] = A[i];
-	        else if( A[i] > tailTable[len-1] )
-	            // A[i] wants to extend largest subsequence
-	            tailTable[len++] = A[i];
-	        else
-	            // A[i] wants to be current end candidate of an existing subsequence
-	            // It will replace ceil value in tailTable
-	            tailTable[CeilIndex(tailTable, -1, len-1, A[i])] = A[i];
-	    }
-	    print(tailTable);
-	    return len;
+	public int[] solve(int[] in, boolean reversed) {
+		int max = in.length;
+		int []out  = new int[max];
+		int len; //length of longest sequence
+
+		out[0] = in[0];
+		len = 1;
+		for( int i = 1; i < max; i++ ) {
+			if( in[i] < out[0] )
+				// new smallest value
+				out[0] = in[i];
+			else if( in[i] > out[len-1] )
+				// extend largest subsequence
+				out[len++] = in[i];
+			else
+				out[getIndex(out,-1, len-1, in[i])] = in[i];
+		}
+
+		int[] res = new int[len];
+		for (int i=0;i<res.length;++i) {
+			res[i] = out[reversed ? --len : i];
+		}
+		return res;
 	}
 
-	 public static void main(String[]args) {
-	    int A[] = { 2, 5, 3, 7, 11, 8, 10, 13, 6 };
-	    Solution s = new Solution();
-	    System.out.println("Length of Longest Increasing Subsequence is "+
-	           s.LongestIncreasingSubsequenceLength(A) +"\n");
-	    
+	public static void main(String[]args) {
+		int A[] = { 2, 5, 3, 7, 11, 8, 10, 13, 6 };
 
-	   
-int[] a = {3, 8,2,3, 4, 12, 2, 10, 6, 14, 1, 9, 5, 13, 3, 11, 7, 15};
-		
+
+
+
+		int[] a = {3, 8,2,3, 4, 12, 2, 10, 6, 14, 1, 9, 5, 13, 3, 11, 7, 15};
+
 		int[] b = {
 				4, 8,2,3, 4, 12, 2, 10, 6, 14, 1,
 				2, 10, 6, 14, 1,9, 5, 13, 3, 11, 7, 15,
@@ -66,9 +62,9 @@ int[] a = {3, 8,2,3, 4, 12, 2, 10, 6, 14, 1, 9, 5, 13, 3, 11, 7, 15};
 				8,2,3, 4, 12, 2, 10, 6, 14,
 				8,2,3, 4, 6, 14, 1,9, 5, 13, 
 				3, 11, 7, 15, 1,2,3,4,5,6,7,8
-				};
-		
-		
+		};
+
+
 		int[] c = {
 				4, 8,2,3, 4, 12, 2, 10, 6, 14, 1,
 				2, 10, 6, 14, 1,9, 5, 13, 3, 11, 7, 15,
@@ -81,15 +77,26 @@ int[] a = {3, 8,2,3, 4, 12, 2, 10, 6, 14, 1, 9, 5, 13, 3, 11, 7, 15};
 				8,2,3, 4, 12, 2, 10, 6, 14,
 				8,2,3, 4, 6, 14, 1,9, 5, 13, 
 				3, 11, 7, 15,2,3,4,5,6,7,8
-				};
-		
-		System.out.print("Solution A: \n");
-		print(s.get(a));
-		System.out.println();
-		System.out.print("Solution B: ");
-		print(s.get(b));
-		System.out.println();
-		System.out.print("Solution C: ");
-		print(s.get(c));
+		};
+		Solution s = new Solution();
+		System.out.println("A: "+
+				ToString(s.solve(A ,false)) +"\n");
+
+		System.out.println("a: "+
+				ToString(s.solve(a, true)) +"\n");
+
+		System.out.println("B: "+
+				ToString(s.solve(b, true)) +"\n");
+
+		System.out.println("C: "+
+				ToString(s.solve(c, false)) +"\n");
+		//		System.out.print("Solution A: \n");
+		//		print(s.get(a));
+		//		System.out.println();
+		//		System.out.print("Solution B: ");
+		//		print(s.get(b));
+		//		System.out.println();
+		//		System.out.print("Solution C: ");
+		//		print(s.get(c));
 	}
 }

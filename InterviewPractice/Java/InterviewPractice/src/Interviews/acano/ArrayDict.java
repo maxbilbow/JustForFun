@@ -1,0 +1,89 @@
+package Interviews.acano;
+
+
+import java.util.Collection;
+import java.util.Map;
+import java.util.Set;
+public class ArrayDict<K,V> implements Map {
+	
+	K[] keys; V[] values;
+	int size = 0;
+	@Override
+	public int size() {
+		// TODO Auto-generated method stub
+		return keys.length;
+	}
+
+	@Override
+	public boolean isEmpty() {
+		// TODO Auto-generated method stub
+		return size == 0;
+	}
+
+	@Override
+	public boolean containsKey(Object key) {
+		for (K k : keys)
+			if (k == key)
+				return true;
+		return false;
+	}
+
+	@Override
+	public boolean containsValue(Object value) {
+		for (V v : values)
+			if (v == value)
+				return true;
+		return false;
+	}
+
+	@Override
+	public Object get(Object key) {
+		for (int i = 0; i<size();++i)
+			if (keys[i] == key)
+				return values[i];
+		return null;
+	}
+
+	@Override
+	public Object put(Object key, Object value) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Object remove(Object key) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void putAll(Map m) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void clear() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Set keySet() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Collection values() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Set entrySet() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+}
